@@ -1,0 +1,13 @@
+<style>
+:root {
+  {{ if .Site.Params.backgroundImage }}
+  --background-image: {{ .Site.Params.backgroundImage }};
+  {{ end }}
+  {{ if .Site.Params.contentPanelWidth }}
+  --content-panel-width: {{ .Site.Params.contentPanelWidth }};
+  {{ end }}
+}
+</style>
+<!-- TikZJax -->
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>

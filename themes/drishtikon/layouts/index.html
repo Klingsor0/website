@@ -1,0 +1,143 @@
+{{ define "main" }}
+<div class="container">
+    <div class="homepage-columns">
+        <!-- Left Column - Profile Info -->
+        <div class="left-column">
+            <div class="profile">
+                <img src="{{ .Site.Params.profilePhoto | default "/images/pfp.jpg" }}" alt="Profile Photo" class="profile-photo">
+            </div>
+            
+            <!-- Name and Tagline -->
+            <div class="cv-name-section">
+                <h2>{{ .Site.Params.name | default .Site.Title }}</h2>
+                <p class="cv-tagline">{{ .Site.Params.tagline }}</p>
+            </div>
+            
+            <!-- Description -->
+            <div class="profile-description">
+                {{ if .Site.Params.profileDescription }}
+                <p>{{ .Site.Params.profileDescription | markdownify }}</p>
+                {{ end }}
+            </div>
+            
+            <!-- Contact Info -->
+            {{ if .Site.Params.email }}
+            <div class="cv-contact">
+                <h3>Contact</h3>
+                <div class="cv-contact-item">
+                    <span class="icon email-icon"></span>
+                    <span>{{ .Site.Params.email }}</span>
+                </div>
+                {{ if .Site.Params.location }}
+                <div class="cv-contact-item">
+                    <span>📍</span>
+                    <span>{{ .Site.Params.location }}</span>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            <!-- Recent Updates/News -->
+            {{ if .Site.Params.profileUpdates }}
+            <section class="cv-section">
+                <h2 class="cv-section-title">Recent Updates</h2>
+                <div class="cv-section-content">
+                    {{ .Site.Params.profileUpdates | markdownify }}
+                </div>
+            </section>
+            {{ end }}
+
+
+        </div>
+
+        <!-- Right Column - CV Sections -->
+        <div class="right-column">
+            <!-- Education Section -->
+            {{ if .Site.Params.education }}
+            <section class="cv-section">
+                <h2 class="cv-section-title">Education</h2>
+                <div class="cv-section-content">
+                    {{ range .Site.Params.education }}
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h3>{{ .degree }}</h3>
+                            <span class="cv-date">{{ .year }}</span>
+                        </div>
+                        <p class="cv-item-subtitle">{{ .institution }}</p>
+                        {{ if .details }}
+                        <p class="cv-item-details">{{ .details }}</p>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+
+            <!-- Experience Section -->
+            {{ if .Site.Params.experience }}
+            <section class="cv-section">
+                <h2 class="cv-section-title">Experience</h2>
+                <div class="cv-section-content">
+                    {{ range .Site.Params.experience }}
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <h3>{{ .position }}</h3>
+                            <span class="cv-date">{{ .period }}</span>
+                        </div>
+                        <p class="cv-item-subtitle">{{ .company }}</p>
+                        {{ if .description }}
+                        <div class="cv-item-details">{{ .description | markdownify }}</div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+
+            <!-- Skills Section -->
+            {{ if .Site.Params.skills }}
+            <section class="cv-section">
+                <h2 class="cv-section-title">Skills</h2>
+                <div class="cv-section-content">
+                    <div class="cv-skills">
+                        {{ range .Site.Params.skills }}
+                        <div class="cv-skill-category">
+                            <h4>{{ .category }}</h4>
+                            <p>{{ delimit .items ", " }}</p>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </section>
+            {{ end }}
+
+            <!-- Publications/Research Section -->
+            {{ if .Site.Params.publications }}
+            <section class="cv-section">
+                <h2 class="cv-section-title">Publications</h2>
+                <div class="cv-section-content">
+                    {{ range .Site.Params.publications }}
+                    <div class="cv-item">
+                        <h3>{{ .title }}</h3>
+                        <p class="cv-item-subtitle">{{ .authors }} ({{ .year }})</p>
+                        <p class="cv-item-details"><em>{{ .venue }}</em></p>
+                        {{ if .link }}
+                        <a href="{{ .link }}" class="cv-link" target="_blank">View Publication →</a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+
+            <!-- Download CV Button -->
+            {{ if .Site.Params.cvFile }}
+            <div class="cv-download">
+                <a href="{{ .Site.Params.cvFile }}" class="cv-download-button" target="_blank">
+                    <span class="icon cv-icon"></span> Download Full CV (PDF)
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
