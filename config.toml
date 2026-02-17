@@ -2,6 +2,7 @@ baseURL = "https://klingsor0.github.io/website/"
 languageCode = 'en-us'
 title = 'Edgar Ivan Hinojosa'
 theme = 'drishtikon'
+relativeURLs = true
 
 [markup]
   [markup.goldmark]
@@ -48,39 +49,50 @@ theme = 'drishtikon'
 		tagline = "Applied Mathematical Physicist"
 		location = "San Nicolas de los Garza, México"
 		cvFile = "/files/cv.pdf"  # Optional: link to downloadable CV
+profileDescription = """
+Applied Physics graduate with experience in experimental instrumentation, data analysis, and scientific software development. 
+My work focuses on the design of low-cost experimental systems, automated data-processing pipelines, and physically motivated models 
+validated through experimental measurements. I am particularly interested in applied research, data-driven modeling, and engineering-oriented problem solving.
+"""
 
-		profileDescription = """
-		I need to see the ted talk to update this content
-		"""
+profileUpdates = """
+- **Dec 2025**: Completed B.S. in Physics at Universidad Autónoma de Nuevo León.
+- **2024–2025**: Research Assistant at CICFIM-UANL, working on experimental modeling and data automation.
+- **2025**: Laboratory Technician and Instructor at the Physics Department, FCFM.
+"""
 
-		profileUpdates = """
-		- **Dic 2025**: Egresated from the ...
-		"""
-		  [[params.education]]
-			degree = "B.S. in Physics"
-			institution = "Universidad Autónoma de Nuevo León"
-			year = "2021-2025"
+[[params.education]]
+degree = "B.S. in Physics"
+institution = "Universidad Autónoma de Nuevo León"
+year = "2021–2025"
 
-		  [[params.experience]]
-			position = "Laboratory Technician"
-			company = "Physics Department, FCFM"
-			period = "Dic. 2024 - Dic. 2025"
-			description = "- Implementation and design of new experiments using high quality recovered sensors that were in disued, avoiding to buy new equipment and leveraging the presicion standards. \n - Teaching Mechanics laboratory classes and assiting in electrodynamics laboratory"
 
-		  [[params.experience]]
-			position = "Research Assitant"
-			company = "CICFIM, UANL"
-			period = "2023-2025"
-			description = "- Desigining open source equipment avoiding high cost equipment with a succesfully level of precision \n - Proposing of geometry based models to describe physical phenomena with a mean square error of 30. \n - Programming automatated pipelines for scalability and graphical users interfaces for didactic control of the data analysis."
+[[params.experience]]
+position = "Laboratory Technician and Instructor"
+company = "Department of Physics, FCFM"
+period = "Jan. 2025 – Dec. 2025"
+description = """
+- Design and implementation of experimental setups using precision sensors adapted with microcontrollers, extending the lifespan of existing laboratory equipment.\n - Calibration, validation, and maintenance of experimental instrumentation under standard precision requirements.\n - Instruction of undergraduate mechanics laboratory courses and assistance in electrodynamics laboratory sessions.
+"""
 
-		  [[params.skills]]
-			category = "Programming Languages"
-			items = ["Python", "R", "BashScript"]
 
-		  [[params.skills]]
-			category = "Frameworks & Tools"
-			items = ["Open-CV, Numpy, Pandas, Mathematica, Microcontrollers, AutoCAD"]
+[[params.experience]]
+position = "Research Assistant"
+company = "CICFIM, UANL"
+period = "Jan. 2024 – Dec. 2025"
+description = """
+- Design and prototyping of open-source, low-cost scientific equipment while maintaining satisfactory experimental precision. \n - Development and validation of geometry- and physics-based models to describe experimental phenomena, achieving mean squared errors below established benchmarks. \n - Programming of automated data-processing pipelines, report generation tools, and interactive graphical user interfaces for experimental data analysis.
+"""
 
+
+[[params.skills]]
+category = "Programming Languages"
+items = ["Python", "R", "Bash"]
+
+
+[[params.skills]]
+category = "Frameworks & Tools"
+items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCAD", "Onshape"]
 [menu]
     [[menu.main]]
         name = "blogs"
