@@ -1,0 +1,31 @@
+<style>
+:root {
+  {{ if .Site.Params.backgroundImage }}
+  --background-image: {{ .Site.Params.backgroundImage }};
+  {{ end }}
+  {{ if .Site.Params.contentPanelWidth }}
+  --content-panel-width: {{ .Site.Params.contentPanelWidth }};
+  {{ end }}
+  {{ if .Site.Params.panelBackgroundColor }}
+  --panel-bg-color: {{ .Site.Params.panelBackgroundColor }};
+  {{ end }}
+  {{ if .Site.Params.panelShadowColor }}
+  --panel-shadow-color: {{ .Site.Params.panelShadowColor }};
+  {{ end }}
+}
+</style>
+<!-- MathJax Configuration -->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>

@@ -1,0 +1,97 @@
+baseURL = 'https://example.com'
+languageCode = 'en-us'
+title = 'Edgar Ivan Hinojosa'
+theme = 'drishtikon'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+    # Uncomment if you have a logo image
+    # logo = "/path-to-your-logo"
+
+    # Profile section for homepage
+    profilePhoto = "/profile-pic.jpeg"
+    github = "https://github.com/klingsor0"
+    email = "mailto:e_e.ivan.h_hs@outlook.com"
+    linkedin = "www.linkedin.com/in/edgar-ivan-hinojosa-saldaña-95273b260"
+    #pinterest = "https://www.pinterest.com/"
+    cv = "/path-to-your-cv" # subir a outlook.
+    math = true
+
+#     Uncomment if you want to customize the colors
+# ruoyu theme
+     backgroundColor = "#4748ad"
+     linksColor = "#9D8689"
+     textColor = "#100a10"
+     fontFamily = "Inter"
+     tableHeaderColor = "#908590"
+     tableContentColor = "#f89e9d"
+     tableRowHoverColor = "#ffbbba"
+     writingCardBackground = "#8879C8"    
+     panelBackgroundColor = "#8879C8"    
+     backgroundImage = "url('/images/penrose-tiling-3.svg')"
+     contentPanelWidth = "70%"
+		name = "Lic. Edgar Ivan hinojosa Saldaña"
+		tagline = "Applied Mathematical Physicist"
+		location = "San Nicolas de los Garza, México"
+		cvFile = "/files/cv.pdf"  # Optional: link to downloadable CV
+
+		profileDescription = """
+		I need to see the ted talk to update this content
+		"""
+
+		profileUpdates = """
+		- **Dic 2025**: Egresated from the ...
+		"""
+		  [[params.education]]
+			degree = "B.S. in Physics"
+			institution = "Universidad Autónoma de Nuevo León"
+			year = "2021-2025"
+
+		  [[params.experience]]
+			position = "Laboratory Technician"
+			company = "Physics Department, FCFM"
+			period = "Dic. 2024 - Dic. 2025"
+			description = "- Implementation and design of new experiments using high quality recovered sensors that were in disued, avoiding to buy new equipment and leveraging the presicion standards. \n - Teaching Mechanics laboratory classes and assiting in electrodynamics laboratory"
+
+		  [[params.experience]]
+			position = "Research Assitant"
+			company = "CICFIM, UANL"
+			period = "2023-2025"
+			description = "- Desigining open source equipment avoiding high cost equipment with a succesfully level of precision \n - Proposing of geometry based models to describe physical phenomena with a mean square error of 30. \n - Programming automatated pipelines for scalability and graphical users interfaces for didactic control of the data analysis."
+
+		  [[params.skills]]
+			category = "Programming Languages"
+			items = ["Python", "R", "BashScript"]
+
+		  [[params.skills]]
+			category = "Frameworks & Tools"
+			items = ["Open-CV, Numpy, Pandas, Mathematica, Microcontrollers, AutoCAD"]
+
+[menu]
+    [[menu.main]]
+        name = "blogs"
+        url = "/blogs/"
+        weight = 10
+    [[menu.main]]
+        name = "projects"
+        url = "/projects/"
+        weight = 20
+    [[menu.main]]
+        name = "research"
+        url = "/research/"
+        weight = 30
+
