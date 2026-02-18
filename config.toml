@@ -2,7 +2,7 @@ baseURL = "https://klingsor0.github.io/website/"
 languageCode = 'en-us'
 title = 'Edgar Ivan Hinojosa'
 theme = 'drishtikon'
-relativeURLs = true
+relativeURLs = false
 
 [markup]
   [markup.goldmark]

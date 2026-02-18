@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lasers on Edgar Ivan Hinojosa</title>
+    <link>https://klingsor0.github.io/website/tags/lasers/</link>
+    <description>Recent content in Lasers on Edgar Ivan Hinojosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://klingsor0.github.io/website/tags/lasers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laser-track</title>
+      <link>https://klingsor0.github.io/website/projects/proto1/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/projects/proto1/</guid>
+      <description>Graphical interface for laser path extraction and analysis for optical experimental arragements.
+Features I have to enumerate the functionalities that supplies.
+Technical Details I have to add here the articles references of the numerical methods that uses.</description>
+    </item>
+    
+  </channel>
+</rss>

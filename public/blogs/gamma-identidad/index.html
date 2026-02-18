@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La identidad de la reciproca de la gamma por integración compleja | Edgar Ivan Hinojosa</title>
+    <link rel="icon" href="#ZgotmplZ"></link>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        :root {
+            --background-color: #4748ad;
+            --links-color: #9D8689;
+            --text-color: #100a10;
+            --table-header-color: #908590;
+            --table-content-color: #f89e9d;
+            --table-row-hover-color: #ffbbba;
+            --writing-card-background: #8879C8;
+            --font-family: Inter;
+      		--background-image: url('/images/penrose-tiling-3.svg');
+      		--panel-bg-color: #8879C8;
+			--content-panel-width: 70%;
+        }
+    </style>
+    <link rel="preload" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <script>
+window.MathJax = {
+  tex: {
+    tags: 'ams',
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+    
+</head>
+
+
+
+  <script>
+window.MathJax = {
+  tex: {
+    tags: 'ams',
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+</script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+
+
+<body>
+<nav class="top-nav">
+        <a href="https://klingsor0.github.io/website/" class="site-title">
+            Edgar Ivan Hinojosa
+        </a>
+    <div class="nav-links">
+        
+        <a href="/website/blogs/" class="">
+        blogs
+        </a>
+        
+        <a href="/website/projects/" class="">
+        projects
+        </a>
+        
+        <a href="/website/research/" class="">
+        research
+        </a>
+        
+    </div>
+
+</nav>
+
+
+<main>
+    
+<article class="single-post">
+<header class="post-header">
+	<h1>La identidad de la reciproca de la gamma por integración compleja</h1>
+	<div class="post-meta">
+		<time>February 15, 2026</time>
+		
+	</div>
+</header>
+
+<div class="post-content">
+	
+	
+	<p>Demuestre la reflectividad de la función gamma
+\begin{equation}
+\Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }
+\end{equation}
+Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $
+\begin{align}
+\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \
+&amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \
+&amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I
+\end{align}
+donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $.</p>
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
+<script type="text/tikz">
+	\begin{tikzpicture}[decoration={markings,
+    mark=at position 1cm   with {\arrowreversed[line width=2pt]{stealth}},
+    mark=at position 4.5cm with {\arrowreversed[line width=2pt]{stealth}},
+    mark=at position 7cm   with {\arrowreversed[line width=2pt]{stealth}},
+    mark=at position 9.5cm with {\arrowreversed[line width=2pt]{stealth}}
+  }]
+  \draw[thick, ->] (-3,0) -- (3,0) coordinate (xaxis);
+
+  \draw[thick, ->] (0,0) -- (0,3) coordinate (yaxis);
+
+  \filldraw[red] (0,1) circle (2pt);
+
+  \node[above] at (xaxis) {$\mathrm{Re}(z)$};
+
+  \node[right]  at (yaxis) {$\mathrm{Im}(z)$};
+
+  \path[draw,blue, line width=1pt, postaction=decorate]
+        (-2,2)
+    --  (2, 2)  node[midway, above right, black] {$C_R$} node[above, black] {$R+2\pi i$} 
+	--  (2, 0)  node[midway, right, black] {} node[below, black] {$R$}     
+	--  (-2,0)  node[midway, below, black] {} node[below, black] {$-R$}
+	--  (-2,2)  node[midway, left, black] {} node[above, black]{$-R+2\pi i$};
+\end{tikzpicture} 
+</script>
+<pre><code>			Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$
+			\begin{align}
+				\oint_{C_R} \frac{e ^{( 1-\alpha ) z} dz}{1 + e^z}	&amp;= \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int ^{2\pi}_0 \frac{\exp( ( 1-\alpha ) ( R+iy )  ) dx}{1 + \exp( R+i y ) } +\\
+																	&amp;+ \int^{-R}_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy )  ) dx}{1 + \exp( -R+i y ) } 
+			.\end{align}
+			Evaluemos el límite de $R\to\infty$ de los integrandos que van paralelos al eje imaginario. El primero notamos que al evaluar el límite tenemos una indefinición cociente de infinitos, así que podemos usar la regla de l'Hopital
+			\begin{align}
+					\lim_{R \to \infty} \frac{\exp( ( 1- \alpha ) R ) \exp( ( 1- \alpha ) iy ) }{1 + \exp( R ) \exp( iy ) } &amp;=\lim_{R \to \infty}  \frac{( 1-\alpha ) \exp( ( 1-\alpha ) R ) \exp( ( 1-\alpha ) iy ) }{\exp( R ) \exp( iy ) } \\
+																															&amp;=\lim_{R \to \infty}  ( 1-\alpha ) \exp( -\alpha  R ) \exp(-\alpha  iy ) = 0
+			\end{align}
+			para el segundo integrando es solamente simplificar y evaluar
+			\begin{align}
+					\lim_{R \to \infty} \frac{\exp( ( \alpha -1 ) R ) \exp( ( 1- \alpha ) iy ) }{1 + \exp( -R ) \exp( iy ) } &amp;=  \frac{\lim_{R \to \infty} \exp( ( \alpha -1) R ) \exp( ( 1-\alpha ) iy ) }{\lim_{R \to \infty}  1 +\exp( -R ) \exp( iy ) } \\
+																															&amp;=\lim_{R \to \infty}  \exp( \alpha  R ) \exp(-\alpha  iy ) = 0
+			\end{align}
+</code></pre>
+<p>resulta igualmente en cero dado que suponemos  $\alpha-1&lt;0$.
+De modo tal que cuando evaluamos el límite en la intrgral de contorno tenemos
+\begin{align}
+\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &amp;= \lim_{R \to \infty} \left{  \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int^{-R}<em>{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi  i) }   \right} \
+&amp;=   \int^\infty</em>{-\infty} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} - \int^{\infty}<em>{-\infty} \frac{\exp( ( 1- \alpha ) x) \exp(( 1- \alpha )   2\pi i  ) dx}{1 + \exp( x ) \exp( 2\pi i )  }  \
+&amp;= ( 1- \exp( ( 1- \alpha ) 2\pi i )  )  \int ^\infty</em>{-\infty} \frac{\exp( (   1- \alpha )x ) }{1 + \exp( x ) } \
+&amp;= [ 1 - \exp( ( 1-  \alpha )2\pi i  )  ] I \
+\end{align}
+con esta igualdad podemos evaluar el contorno con el teorema del residuo
+\begin{align}
+\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &amp;=  2\pi i\sum_k \text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , z_k \right)
+\end{align}
+que es fácil ver que solamente hay un polo simple $z_0$ dentro del contorno dado por $1 + \exp( z )= 0  \implies z_0= i\pi$, evaluemos su residuo con l&rsquo;Hopital
+\begin{align}
+\text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , i\pi \right) &amp;=  \lim_{z \to i \pi} ( z-i\pi )  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } \
+&amp;= \lim_{z \to i\pi}  \frac{\exp( ( 1-\alpha )z  ) + ( z- i\pi )  ( 1- \alpha ) \exp( ( 1- \alpha ) z )  }{\exp( z ) } \
+&amp;= \frac{e ^{i\pi} e ^{-\alpha \pi i}}{e^{i\pi}} = e ^{- \alpha \pi i}.
+\end{align}
+Así podemos despejar la integral de interes $I$  como
+\begin{align}
+I &amp;= \frac{ 2\pi i e ^{- \alpha \pi i}}{1- e ^{2\pi i} e^{- \alpha \pi i}} = \pi \frac{2i }{e ^{ \alpha \pi i} - e ^{- \alpha \pi i}} \
+&amp;= \frac{\pi}{\sin( \pi \alpha ) } \
+\therefore  \Gamma(  \alpha )  \Gamma( 1 -  \alpha )  &amp;= \frac{\pi}{\sin( \pi z ) } .
+\end{align}</p>
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
+
+</div>
+</article>
+
+</main>
+
+<footer>
+    <div class="site-footer">
+        <div class = "footer-links" >
+            <a href="https://github.com/klingsor0" target="_blank">
+                <span class="icon github-icon"></span>
+            </a>
+            <a href="mailto:e_e.ivan.h_hs@outlook.com">
+                <span class="icon email-icon"></span>
+            </a>
+            <a href="www.linkedin.com/in/edgar-ivan-hinojosa-salda%c3%b1a-95273b260">
+                <span class="icon linkedin-icon"></span>
+            </a>
+            <a href="">
+                <span class="icon rss-icon"></span>
+            </a>
+
+
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+</html>

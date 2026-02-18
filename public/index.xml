@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edgar Ivan Hinojosa</title>
+    <link>https://klingsor0.github.io/website/</link>
+    <description>Recent content on Edgar Ivan Hinojosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate><atom:link href="https://klingsor0.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La identidad de la reciproca de la gamma por integración compleja</title>
+      <link>https://klingsor0.github.io/website/blogs/gamma-identidad/</link>
+      <pubDate>Sun, 15 Feb 2026 23:35:59 -0600</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/blogs/gamma-identidad/</guid>
+      <description>Demuestre la reflectividad de la función gamma \begin{equation} \Gamma( z ) \Gamma( 1-z ) = \frac{\pi}{\sin( \pi z ) } \end{equation} Podemos partir desde la definición de la $\beta( 1- \alpha, \alpha ) $ \begin{align} \Gamma( 1- \alpha ) \Gamma( \alpha ) &amp;amp;= \beta ( 1- \alpha, \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t )^{1- \alpha+ \alpha} } \ &amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \ &amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I \end{align} donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $.</description>
+    </item>
+    
+    <item>
+      <title>La forma de una transformada de Lorentz general por generadores</title>
+      <link>https://klingsor0.github.io/website/lorentz-transform/</link>
+      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/lorentz-transform/</guid>
+      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
+Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+    </item>
+    
+    <item>
+      <title>Transformada de Lorentz general por generadores de grupo</title>
+      <link>https://klingsor0.github.io/website/blogs/lorentz-transform/</link>
+      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/blogs/lorentz-transform/</guid>
+      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
+Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+    </item>
+    
+    <item>
+      <title>Una deducción con algebras de Lie de una transformación de Lorentz</title>
+      <link>https://klingsor0.github.io/website/writings/lorentz-transform/</link>
+      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/writings/lorentz-transform/</guid>
+      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
+Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+    </item>
+    
+    <item>
+      <title>Laser-track</title>
+      <link>https://klingsor0.github.io/website/projects/proto1/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/projects/proto1/</guid>
+      <description>Graphical interface for laser path extraction and analysis for optical experimental arragements.
+Features I have to enumerate the functionalities that supplies.
+Technical Details I have to add here the articles references of the numerical methods that uses.</description>
+    </item>
+    
+    <item>
+      <title>Hola mundo</title>
+      <link>https://klingsor0.github.io/website/writings/proto2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/writings/proto2/</guid>
+      <description>Hola aquí pongo proyectos tal cual.</description>
+    </item>
+    
+  </channel>
+</rss>

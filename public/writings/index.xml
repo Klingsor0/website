@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writings on Edgar Ivan Hinojosa</title>
+    <link>https://klingsor0.github.io/website/writings/</link>
+    <description>Recent content in Writings on Edgar Ivan Hinojosa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Feb 2026 15:52:52 -0600</lastBuildDate><atom:link href="https://klingsor0.github.io/website/writings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Una deducción con algebras de Lie de una transformación de Lorentz</title>
+      <link>https://klingsor0.github.io/website/writings/lorentz-transform/</link>
+      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/writings/lorentz-transform/</guid>
+      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
+Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+    </item>
+    
+    <item>
+      <title>Hola mundo</title>
+      <link>https://klingsor0.github.io/website/writings/proto2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://klingsor0.github.io/website/writings/proto2/</guid>
+      <description>Hola aquí pongo proyectos tal cual.</description>
+    </item>
+    
+  </channel>
+</rss>
