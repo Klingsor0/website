@@ -29,7 +29,7 @@ relativeURLs = false
     email = "mailto:e_e.ivan.h_hs@outlook.com"
     linkedin = "www.linkedin.com/in/edgar-ivan-hinojosa-saldaña-95273b260"
     #pinterest = "https://www.pinterest.com/"
-    cv = "/path-to-your-cv" # subir a outlook.
+    cv = "/cv/cv-02-26.pdf" # subir a outlook.
     math = true
 
 #     Uncomment if you want to customize the colors
@@ -45,14 +45,12 @@ relativeURLs = false
      panelBackgroundColor = "#8879C8"    
      backgroundImage = "url('/images/penrose-tiling-3.svg')"
      contentPanelWidth = "70%"
-		name = "Lic. Edgar Ivan hinojosa Saldaña"
-		tagline = "Applied Mathematical Physicist"
+		name = "BSc Edgar Ivan hinojosa Saldaña"
+		tagline = "Physicist"
 		location = "San Nicolas de los Garza, México"
-		cvFile = "/files/cv.pdf"  # Optional: link to downloadable CV
+		cvFile = "url('/cv/cv-02-26.pdf')"
 profileDescription = """
-Applied Physics graduate with experience in experimental instrumentation, data analysis, and scientific software development. 
-My work focuses on the design of low-cost experimental systems, automated data-processing pipelines, and physically motivated models 
-validated through experimental measurements. I am particularly interested in applied research, data-driven modeling, and engineering-oriented problem solving.
+I'm known for proactively propose accesible solutions without compromise accuracy, from experimental, numerical and statistical methods to theoretical experimentally verified solutions
 """
 
 profileUpdates = """
@@ -72,7 +70,7 @@ position = "Laboratory Technician and Instructor"
 company = "Department of Physics, FCFM"
 period = "Jan. 2025 – Dec. 2025"
 description = """
-- Design and implementation of experimental setups using precision sensors adapted with microcontrollers, extending the lifespan of existing laboratory equipment.\n - Calibration, validation, and maintenance of experimental instrumentation under standard precision requirements.\n - Instruction of undergraduate mechanics laboratory courses and assistance in electrodynamics laboratory sessions.
+- Design and implementation of experimental setups using precision sensors adapted with microcontrollers, extending the lifespan of existing laboratory equipment.\n - Calibration, validation, and maintenance of experimental instrumentation.\n - Instruction of undergraduate mechanics laboratory courses and assistance in electrodynamics laboratory sessions.
 """
 
 
@@ -81,18 +79,19 @@ position = "Research Assistant"
 company = "CICFIM, UANL"
 period = "Jan. 2024 – Dec. 2025"
 description = """
-- Design and prototyping of open-source, low-cost scientific equipment while maintaining satisfactory experimental precision. \n - Development and validation of geometry- and physics-based models to describe experimental phenomena, achieving mean squared errors below established benchmarks. \n - Programming of automated data-processing pipelines, report generation tools, and interactive graphical user interfaces for experimental data analysis.
+- Design and prototyping of open-source, low-cost scientific equipment while maintaining satisfactory experimental precision. \n - Development and validation of geometry- and physics-based models to describe experimental phenomena, achieving satisfactory mean squared errors. \n - Programming of automated data-processing pipelines, report generation tools, and interactive graphical user interfaces for experimental data analysis.
 """
 
 
 [[params.skills]]
 category = "Programming Languages"
-items = ["Python", "R", "Bash"]
+items = ["Python", "R", "Bash", "Fortran"]
 
 
 [[params.skills]]
 category = "Frameworks & Tools"
 items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCAD", "Onshape"]
+
 [menu]
     [[menu.main]]
         name = "blogs"
