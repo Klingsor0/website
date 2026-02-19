@@ -48,7 +48,7 @@ relativeURLs = false
 		name = "BSc Edgar Ivan hinojosa Saldaña"
 		tagline = "Physicist"
 		location = "San Nicolas de los Garza, México"
-		cvFile = "url('/cv/cv-02-26.pdf')"
+		cvFile = "/cv/cv-02-26.pdf"
 profileDescription = """
 I'm known for proactively propose accesible solutions without compromise accuracy, from experimental, numerical and statistical methods to theoretical experimentally verified solutions
 """
