@@ -26,7 +26,7 @@
                 <h3>Contact</h3>
                 <div class="cv-contact-item">
                     <span class="icon email-icon"></span>
-                    <span>{{ .Site.Params.email }}</span>
+					    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
                 </div>
                 {{ if .Site.Params.location }}
                 <div class="cv-contact-item">

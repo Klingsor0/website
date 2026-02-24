@@ -2,21 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lasers on Edgar Ivan Hinojosa</title>
-    <link>https://klingsor0.github.io/website/tags/lasers/</link>
+    <link>http://localhost:1313/tags/lasers/</link>
     <description>Recent content in Lasers on Edgar Ivan Hinojosa</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://klingsor0.github.io/website/tags/lasers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/lasers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Laser-track</title>
-      <link>https://klingsor0.github.io/website/projects/proto1/</link>
+      <link>http://localhost:1313/projects/proto1/</link>
       <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/projects/proto1/</guid>
-      <description>Graphical interface for laser path extraction and analysis for optical experimental arragements.
-Features I have to enumerate the functionalities that supplies.
-Technical Details I have to add here the articles references of the numerical methods that uses.</description>
+      <guid>http://localhost:1313/projects/proto1/</guid>
+      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

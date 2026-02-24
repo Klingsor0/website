@@ -2,50 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://klingsor0.github.io/website/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/blogs/gamma-identidad/</loc>
+    <loc>http://localhost:1313/blogs/gamma-identidad/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/lorentz-transform/</loc>
+    <loc>http://localhost:1313/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/blogs/lorentz-transform/</loc>
+    <loc>http://localhost:1313/blogs/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/writings/lorentz-transform/</loc>
+    <loc>http://localhost:1313/writings/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/writings/</loc>
+    <loc>http://localhost:1313/writings/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/tags/image-processing/</loc>
+    <loc>http://localhost:1313/tags/experimental-physics/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/projects/proto1/</loc>
+    <loc>http://localhost:1313/tags/fractional-calculus/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/tags/lasers/</loc>
+    <loc>http://localhost:1313/tags/high-precision-sensors/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/projects/</loc>
+    <loc>http://localhost:1313/tags/image-processing/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/tags/python/</loc>
+    <loc>http://localhost:1313/tags/instrumentation/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/tags/</loc>
+    <loc>http://localhost:1313/tags/laser/</loc>
     <lastmod>2026-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/blogs/</loc>
+    <loc>http://localhost:1313/projects/proto1/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lasers/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/hall/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/fraunhoffer/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/gelatina-fraccional/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>https://klingsor0.github.io/website/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://klingsor0.github.io/website/writings/proto2/</loc>
+    <loc>http://localhost:1313/writings/proto2/</loc>
   </url>
 </urlset>

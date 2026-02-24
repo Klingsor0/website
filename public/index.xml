@@ -2,69 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Edgar Ivan Hinojosa</title>
-    <link>https://klingsor0.github.io/website/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Edgar Ivan Hinojosa</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate><atom:link href="https://klingsor0.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>La identidad de la reciproca de la gamma por integración compleja</title>
-      <link>https://klingsor0.github.io/website/blogs/gamma-identidad/</link>
+      <title>La identidad reflectiva de la gamma por integración compleja</title>
+      <link>http://localhost:1313/blogs/gamma-identidad/</link>
       <pubDate>Sun, 15 Feb 2026 23:35:59 -0600</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/blogs/gamma-identidad/</guid>
-      <description>Demuestre la reflectividad de la función gamma \begin{equation} \Gamma( z ) \Gamma( 1-z ) = \frac{\pi}{\sin( \pi z ) } \end{equation} Podemos partir desde la definición de la $\beta( 1- \alpha, \alpha ) $ \begin{align} \Gamma( 1- \alpha ) \Gamma( \alpha ) &amp;amp;= \beta ( 1- \alpha, \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t )^{1- \alpha+ \alpha} } \ &amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \ &amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I \end{align} donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $.</description>
+      <guid>http://localhost:1313/blogs/gamma-identidad/</guid>
+      <description>&lt;p&gt;La reflectividad de la función gamma es:&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}&#xA;\Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }&#xA;\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \&#xA;&amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \&#xA;&amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I&#xA;\end{align}&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>La forma de una transformada de Lorentz general por generadores</title>
-      <link>https://klingsor0.github.io/website/lorentz-transform/</link>
+      <link>http://localhost:1313/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/lorentz-transform/</guid>
-      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
-Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+      <guid>http://localhost:1313/lorentz-transform/</guid>
+      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;$$Ax =x&#39;$$$$&#xA;\overline{g}(e_i) = e^i \forall i \neq 0&#xA;$$$$\overline{g}(e_0) = - e^0$$\[&#xA;u^T g v = (\overline{g}(u), v)&#xA;.\]$$g = \begin{pmatrix} -1 &amp; &amp; &amp; \\ &amp; 1 &amp; &amp; \\ &amp; &amp; 1 &amp; \\ &amp; &amp; &amp; 1 \end{pmatrix} $$$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$$$a_{ij} g_{jl} a_{lk} = g_{ik}$$$$A = e^L$$$$det(A) = e^{trL} =1 \implies trL =0 $$$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$\[&#xA;&#x9;&#x9;A^T= e^{L^T} \implies gA^Tg = e^{g L^Tg} \implies g^2 A^{-1} g^2 = A^{-1}= e^{g L^T g} \implies e^{-L} = e^{g L^T g}&#xA;.\]&lt;p&gt;&#xA;Esto nos da la siguiente propiedad&#xA;\begin{equation}&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Transformada de Lorentz general por generadores de grupo</title>
-      <link>https://klingsor0.github.io/website/blogs/lorentz-transform/</link>
+      <link>http://localhost:1313/blogs/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/blogs/lorentz-transform/</guid>
-      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
-Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+      <guid>http://localhost:1313/blogs/lorentz-transform/</guid>
+      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;&lt;p&gt;Sea $ \mathcal{M} $ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico,  sean  $ x: \mathcal{M} \to \mathbb{R}^4 $ y $ x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4 $ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.&#xA;Deseamos una aplicación lineal $A$ que tome componentes $x_i$ y las mande las componentes  $x^\prime_i$&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Una deducción con algebras de Lie de una transformación de Lorentz</title>
-      <link>https://klingsor0.github.io/website/writings/lorentz-transform/</link>
+      <link>http://localhost:1313/writings/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/writings/lorentz-transform/</guid>
-      <description>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski. Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.
-Sea $\mathcal{M}$ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico, sean $x: \mathcal{M} \to \mathbb{R}^4$ y $x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4$ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.</description>
+      <guid>http://localhost:1313/writings/lorentz-transform/</guid>
+      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;$$Ax =x&#39;$$$$\overline{g}(e_i) = e^i \forall i \neq 0$$$$\overline{g}(e_0) = - e^0$$\[&#xA;u^T g v = (\overline{g}(u), v)&#xA;.\]$$g = \begin{pmatrix} -1 &amp; &amp; &amp; \\ &amp; 1 &amp; &amp; \\ &amp; &amp; 1 &amp; \\ &amp; &amp; &amp; 1 \end{pmatrix} $$$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$$$a_{ij} g_{jl} a_{lk} = g_{ik}$$$$A = e^L$$$$det(A) = e^{trL} =1 \implies trL =0 $$$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$\[&#xA;&#x9;&#x9;A^T= e^{L^T} \implies gA^Tg = e^{g L^Tg} \implies g^2 A^{-1} g^2 = A^{-1}= e^{g L^T g} \implies e^{-L} = e^{g L^T g}&#xA;.\]&lt;p&gt;&#xA;Esto nos da la siguiente propiedad&#xA;\begin{equation}&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Laser-track</title>
-      <link>https://klingsor0.github.io/website/projects/proto1/</link>
+      <link>http://localhost:1313/projects/proto1/</link>
       <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/projects/proto1/</guid>
-      <description>Graphical interface for laser path extraction and analysis for optical experimental arragements.
-Features I have to enumerate the functionalities that supplies.
-Technical Details I have to add here the articles references of the numerical methods that uses.</description>
+      <guid>http://localhost:1313/projects/proto1/</guid>
+      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Measuring Hall Effect in Bismuth</title>
+      <link>http://localhost:1313/projects/hall/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hall/</guid>
+      <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Medición de longitud de onda por difracción circular</title>
+      <link>http://localhost:1313/projects/fraunhoffer/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/fraunhoffer/</guid>
+      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
+      <link>http://localhost:1313/projects/gelatina-fraccional/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/gelatina-fraccional/</guid>
+      <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hola mundo</title>
-      <link>https://klingsor0.github.io/website/writings/proto2/</link>
+      <link>http://localhost:1313/writings/proto2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/writings/proto2/</guid>
-      <description>Hola aquí pongo proyectos tal cual.</description>
+      <guid>http://localhost:1313/writings/proto2/</guid>
+      <description>&lt;p&gt;Hola aquí pongo proyectos tal cual.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

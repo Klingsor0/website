@@ -2,37 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Edgar Ivan Hinojosa</title>
-    <link>https://klingsor0.github.io/website/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Edgar Ivan Hinojosa</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://klingsor0.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experimental Physics</title>
+      <link>http://localhost:1313/tags/experimental-physics/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/experimental-physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fractional Calculus</title>
+      <link>http://localhost:1313/tags/fractional-calculus/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fractional-calculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High Precision Sensors</title>
+      <link>http://localhost:1313/tags/high-precision-sensors/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/high-precision-sensors/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Image Processing</title>
-      <link>https://klingsor0.github.io/website/tags/image-processing/</link>
+      <link>http://localhost:1313/tags/image-processing/</link>
       <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/tags/image-processing/</guid>
+      <guid>http://localhost:1313/tags/image-processing/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Instrumentation</title>
+      <link>http://localhost:1313/tags/instrumentation/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/instrumentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Laser</title>
+      <link>http://localhost:1313/tags/laser/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/laser/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Lasers</title>
-      <link>https://klingsor0.github.io/website/tags/lasers/</link>
+      <link>http://localhost:1313/tags/lasers/</link>
       <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/tags/lasers/</guid>
+      <guid>http://localhost:1313/tags/lasers/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Python</title>
-      <link>https://klingsor0.github.io/website/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://klingsor0.github.io/website/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -26,7 +26,7 @@ relativeURLs = false
     # Profile section for homepage
     profilePhoto = "/profile-pic.jpeg"
     github = "https://github.com/klingsor0"
-    email = "mailto:e_e.ivan.h_hs@outlook.com"
+    email = "e_e.ivan.h_hs@outlook.com"
     linkedin = "www.linkedin.com/in/edgar-ivan-hinojosa-saldaña-95273b260"
     #pinterest = "https://www.pinterest.com/"
     cv = "/cv/cv-02-26.pdf" # subir a outlook.
@@ -50,7 +50,7 @@ relativeURLs = false
 		location = "San Nicolas de los Garza, México"
 		cvFile = "/cv/cv-02-26.pdf"
 profileDescription = """
-I'm known for proactively propose accesible solutions without compromise accuracy, from experimental, numerical and statistical methods to theoretical experimentally verified solutions
+I'm known for proactively propose accesible solutions without compromise accuracy.
 """
 
 profileUpdates = """

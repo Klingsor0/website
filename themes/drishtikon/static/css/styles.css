@@ -8,7 +8,7 @@
 :root {
   --icon-size: 30px;
   --background-image: none; /* url('/images/penrose-tiling.svg'); default: no background */
-  --content-panel-width: 75%; /* default width for content panels */
+  --content-panel-width: 80%; /* default width for content panels */
   --panel-bg-color: rgba(255, 255, 255, 0.95);
   --panel-shadow-color: rgba(0,0,0,0.1)
   --content-panel-max-width: 1200px;
@@ -211,7 +211,7 @@ blockquote {
 
 .profile-description pre {
   display: inline-block;
-  text-align: left;
+  text-align: justify;
   max-width: 100%;
 }
 
@@ -224,7 +224,7 @@ blockquote {
 
 .profile-description p{
       display: inline-block;
-      text-align: center;
+      text-align: left;
 }
 
 .photo-error {
@@ -312,8 +312,18 @@ blockquote {
 
 
 @media (max-width: 768px) {
+  .container{
+	width: 100%;
+  }
+  .single-post{
+    width: 100%;
+  }
   .homepage-columns {
     grid-template-columns: 1fr;
+  }
+ .left-column,
+ .right-column {
+    width: 100%;
   }
   .profile-container {
     position: static;
@@ -390,7 +400,7 @@ blockquote {
 
 @media (max-width: 768px) {
   .posts-list-container {
-    max-width: 85%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -1093,15 +1103,22 @@ body .post-content table {
 }
 
 .cv-contact {
-    display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     font-size: 0.95rem;
     color: color-mix(in srgb, var(--text-color) 70%, transparent);
+	line-height: 1.6;
+	width: 100%;
+	margin:0 auto;
+	padding: 0;
+}
+.cv-contact-item a {
+    color: var(--links-color);           /* Use parent color */
+    text-decoration: none;    /* Remove underline */
 }
 
 .cv-contact span {
-    display: flex;
+	line-height: 1.6;
     align-items: center;
     gap: 0.5rem;
 }
@@ -1235,9 +1252,7 @@ body .post-content table {
     }
 
     .cv-contact {
-        justify-content: center;
         flex-direction: column;
-        gap: 0.5rem;
     }
 
     .cv-item-header {
