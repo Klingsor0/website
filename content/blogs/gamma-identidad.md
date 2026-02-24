@@ -13,21 +13,12 @@ La reflectividad de la función gamma es:
 Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $ 
 
 \begin{align}
-		 \Gamma( 1- \alpha )  \Gamma(  \alpha ) &= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\
-		 &= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\
+		 \Gamma( 1- \alpha )  \Gamma(  \alpha ) &= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\\
+		 &= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\\
 		 &= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I
 \end{align}
 
 donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $. 
-
-
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
-
-
 <script type="text/tikz">
 	\begin{tikzpicture}[decoration={markings,
     mark=at position 1cm   with {\arrowreversed[line width=2pt]{stealth}},
@@ -54,12 +45,14 @@ donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \im
 \end{tikzpicture} 
 </script>
 
-Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$
+Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$:
+
 
 \begin{align}
 	\oint_{C_R} \frac{e ^{( 1-\alpha ) z} dz}{1 + e^z}	&= \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int ^{2\pi}_0 \frac{\exp( ( 1-\alpha ) ( R+iy )  ) dx}{1 + \exp( R+i y ) } +\\\
-	&+ \int^{-R}_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy )  ) dx}{1 + \exp( -R+i y ) } 
+	& + \int^{-R}_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i ) ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy ) ) dy}{1 + \exp( -R+iy ) }
 .\end{align}
+
 
 Evaluemos el límite de $R\to\infty$ de los integrandos que van paralelos al eje imaginario. El primero notamos que al evaluar el límite tenemos una indefinición cociente de infinitos, así que podemos usar la regla de l'Hopital
 
@@ -107,8 +100,4 @@ Así podemos despejar la integral de interes $I$  como
 		\therefore  \Gamma(  \alpha )  \Gamma( 1 -  \alpha )  &= \frac{\pi}{\sin( \pi z ) } .
 \end{align}
 
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
+
