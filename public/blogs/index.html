@@ -41,6 +41,9 @@ window.MathJax = {
 
 
     
+	
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
 </head>
 
 
@@ -85,8 +88,8 @@ window.MathJax = {
 \end{equation}</p>
 <p>Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $</p>
 <p>\begin{align}
-\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \
-&amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \
+\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\
+&amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\
 &amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I
 \end{align}</p></div>
     </article>

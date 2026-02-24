@@ -41,6 +41,9 @@ window.MathJax = {
 
 
     
+	
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
 </head>
 
 
@@ -106,16 +109,11 @@ window.MathJax = {
 \end{equation}</p>
 <p>Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $</p>
 <p>\begin{align}
-\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \
-&amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \
+\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\
+&amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\
 &amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I
 \end{align}</p>
 <p>donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $.</p>
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
 <script type="text/tikz">
 	\begin{tikzpicture}[decoration={markings,
     mark=at position 1cm   with {\arrowreversed[line width=2pt]{stealth}},
@@ -141,10 +139,10 @@ window.MathJax = {
 	--  (-2,2)  node[midway, left, black] {} node[above, black]{$-R+2\pi i$};
 \end{tikzpicture} 
 </script>
-<p>Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$</p>
+<p>Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$:</p>
 <p>\begin{align}
 \oint_{C_R} \frac{e ^{( 1-\alpha ) z} dz}{1 + e^z}	&amp;= \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int ^{2\pi}<em>0 \frac{\exp( ( 1-\alpha ) ( R+iy )  ) dx}{1 + \exp( R+i y ) } +\\
-&amp;+ \int^{-R}</em>{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy )  ) dx}{1 + \exp( -R+i y ) }
+&amp; + \int^{-R}</em>{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i ) ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy ) ) dy}{1 + \exp( -R+iy ) }
 .\end{align}</p>
 <p>Evaluemos el límite de $R\to\infty$ de los integrandos que van paralelos al eje imaginario. El primero notamos que al evaluar el límite tenemos una indefinición cociente de infinitos, así que podemos usar la regla de l&rsquo;Hopital</p>
 <p>\begin{align}
@@ -180,11 +178,6 @@ I &amp;= \frac{ 2\pi i e ^{- \alpha \pi i}}{1- e ^{2\pi i} e^{- \alpha \pi i}} =
 &amp;= \frac{\pi}{\sin( \pi \alpha ) } \
 \therefore  \Gamma(  \alpha )  \Gamma( 1 -  \alpha )  &amp;= \frac{\pi}{\sin( \pi z ) } .
 \end{align}</p>
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0) circle (1in);
-  \end{tikzpicture}
-</script>
 
 </div>
 </article>
