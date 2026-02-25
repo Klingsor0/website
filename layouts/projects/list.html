@@ -45,10 +45,12 @@
 						Live Demo
 					</a>
 					{{ end }}
-					
+					<!-- Conditional Read More link -->
+					{{ if ne .Params.readmore false }}
 					<a href="{{ .RelPermalink }}" class="project-link">
 						Read More →
 					</a>
+					{{ end }}					
 				</div>               
             </div>
         </article>

@@ -6,35 +6,49 @@
     <description>Recent content in Projects on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Laser-track</title>
       <link>http://localhost:1313/projects/proto1/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/proto1/</guid>
-      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Measuring Hall Effect in Bismuth</title>
-      <link>http://localhost:1313/projects/hall/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hall/</guid>
-      <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Medición de longitud de onda por difracción circular</title>
-      <link>http://localhost:1313/projects/fraunhoffer/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/fraunhoffer/</guid>
-      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
       <link>http://localhost:1313/projects/gelatina-fraccional/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/gelatina-fraccional/</guid>
       <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Measuring Hall Effect in Bismuth</title>
+      <link>http://localhost:1313/projects/hall/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/hall/</guid>
+      <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Medición de longitud de onda por difracción circular</title>
+      <link>http://localhost:1313/projects/fraunhoffer/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/fraunhoffer/</guid>
+      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Geometría Simplectica en Mecánica Clásica</title>
+      <link>http://localhost:1313/projects/geo-simplectica/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/geo-simplectica/</guid>
+      <description>&lt;p&gt;Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica&#xA;clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-&#xA;sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en&#xA;mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
+      <link>http://localhost:1313/projects/termo-bidim/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/termo-bidim/</guid>
+      <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

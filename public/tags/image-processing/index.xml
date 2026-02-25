@@ -6,19 +6,19 @@
     <description>Recent content in Image Processing on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/image-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Laser-track</title>
       <link>http://localhost:1313/projects/proto1/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/proto1/</guid>
       <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Medición de longitud de onda por difracción circular</title>
       <link>http://localhost:1313/projects/fraunhoffer/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/fraunhoffer/</guid>
       <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
     </item>

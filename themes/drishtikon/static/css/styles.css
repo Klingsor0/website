@@ -209,19 +209,6 @@ blockquote {
   margin: 0 auto;
 }
 
-.profile-description pre {
-  display: inline-block;
-  text-align: justify;
-  max-width: 100%;
-}
-
-.profile-description code {
-  display: inline-block;
-  text-align: left;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-}
-
 .profile-description p{
       display: inline-block;
       text-align: left;

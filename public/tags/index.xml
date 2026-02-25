@@ -6,62 +6,62 @@
     <description>Recent content in Tags on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Experimental Physics</title>
-      <link>http://localhost:1313/tags/experimental-physics/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/experimental-physics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fractional Calculus</title>
-      <link>http://localhost:1313/tags/fractional-calculus/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fractional-calculus/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>High Precision Sensors</title>
-      <link>http://localhost:1313/tags/high-precision-sensors/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/high-precision-sensors/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Image Processing</title>
       <link>http://localhost:1313/tags/image-processing/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/image-processing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Instrumentation</title>
-      <link>http://localhost:1313/tags/instrumentation/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/instrumentation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Laser</title>
-      <link>http://localhost:1313/tags/laser/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/laser/</guid>
       <description></description>
     </item>
     <item>
       <title>Lasers</title>
       <link>http://localhost:1313/tags/lasers/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/lasers/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
       <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Experimental Physics</title>
+      <link>http://localhost:1313/tags/experimental-physics/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/experimental-physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fractional Calculus</title>
+      <link>http://localhost:1313/tags/fractional-calculus/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fractional-calculus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Instrumentation</title>
+      <link>http://localhost:1313/tags/instrumentation/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/instrumentation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High Precision Sensors</title>
+      <link>http://localhost:1313/tags/high-precision-sensors/</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/high-precision-sensors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Laser</title>
+      <link>http://localhost:1313/tags/laser/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/laser/</guid>
       <description></description>
     </item>
   </channel>
