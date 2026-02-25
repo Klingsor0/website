@@ -49,9 +49,7 @@ relativeURLs = false
 		tagline = "Physicist"
 		location = "San Nicolas de los Garza, México"
 		cvFile = "/cv/cv-02-26.pdf"
-profileDescription = """
-		I am a self-driven learner who proactively adopts new tools to develop accessible, accurate solutions.
-"""
+profileDescription = "I am a self-driven learner who proactively adopts new tools to develop accessible, accurate solutions."
 
 profileUpdates = """
 - **Dec 2025**: Completed B.S. in Physics at Universidad Autónoma de Nuevo León.
