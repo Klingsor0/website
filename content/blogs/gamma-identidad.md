@@ -45,14 +45,13 @@ donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \im
 \end{tikzpicture} 
 </script>
 
-Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$:
+Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$ :
 
 
 \begin{align}
 	\oint_{C_R} \frac{e ^{( 1-\alpha ) z} dz}{1 + e^z}	&= \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int ^{2\pi}_0 \frac{\exp( ( 1-\alpha ) ( R+iy )  ) dx}{1 + \exp( R+i y ) } +\\\
-	& + \int^{-R}_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i ) ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy ) ) dy}{1 + \exp( -R+iy ) }
-.\end{align}
-
+	&+ \int^{-R}\_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i ) ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}\_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy ) ) dy}{1 + \exp( -R+iy ) }
+\end{align}
 
 Evaluemos el límite de $R\to\infty$ de los integrandos que van paralelos al eje imaginario. El primero notamos que al evaluar el límite tenemos una indefinición cociente de infinitos, así que podemos usar la regla de l'Hopital
 
@@ -72,10 +71,10 @@ resulta igualmente en cero dado que suponemos  $\alpha-1<0$.
 De modo tal que cuando evaluamos el límite en la intrgral de contorno tenemos
 
 \begin{align}
-		\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &= \lim_{R \to \infty} \left\{  \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int^{-R}_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi  i) }   \right\} \\
-																				  &=   \int^\infty_{-\infty} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} - \int^{\infty}_{-\infty} \frac{\exp( ( 1- \alpha ) x) \exp(( 1- \alpha )   2\pi i  ) dx}{1 + \exp( x ) \exp( 2\pi i )  }  \\
-																				  &= ( 1- \exp( ( 1- \alpha ) 2\pi i )  )  \int ^\infty_{-\infty} \frac{\exp( (   1- \alpha )x ) }{1 + \exp( x ) } \\
-																				 &= [ 1 - \exp( ( 1-  \alpha )2\pi i  )  ] I \\
+		\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &= \lim_{R \to \infty} \left\lbrace \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int^{-R} \_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi  i) } \right\rbrace  \\\
+&=   \int^\infty_{-\infty} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} - \int^\infty_{\infty} \frac{\exp( ( 1- \alpha ) x) \exp(( 1- \alpha )   2\pi i  ) dx}{1 + \exp( x ) \exp( 2\pi i )  }  \\\
+&= ( 1- \exp( ( 1- \alpha ) 2\pi i )  )  \int ^\infty_{-\infty} \frac{\exp( (   1- \alpha )x ) }{1 + \exp( x ) } \\\
+&= [ 1 - \exp( ( 1-  \alpha )2\pi i  )  ] I 
 \end{align}
 
 con esta igualdad podemos evaluar el contorno con el teorema del residuo
@@ -87,16 +86,16 @@ con esta igualdad podemos evaluar el contorno con el teorema del residuo
 que es fácil ver que solamente hay un polo simple $z_0$ dentro del contorno dado por $1 + \exp( z )= 0  \implies z_0= i\pi$, evaluemos su residuo con l'Hopital
 
 \begin{align}
-		\text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , i\pi \right) &=  \lim_{z \to i \pi} ( z-i\pi )  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } \\
-																						 &= \lim_{z \to i\pi}  \frac{\exp( ( 1-\alpha )z  ) + ( z- i\pi )  ( 1- \alpha ) \exp( ( 1- \alpha ) z )  }{\exp( z ) } \\
-																						 &= \frac{e ^{i\pi} e ^{-\alpha \pi i}}{e^{i\pi}} = e ^{- \alpha \pi i}.
+		\text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , i\pi \right) &=  \lim_{z \to i \pi} ( z-i\pi )  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } \\\
+		&= \lim_{z \to i\pi}  \frac{\exp( ( 1-\alpha )z  ) + ( z- i\pi )  ( 1- \alpha ) \exp( ( 1- \alpha ) z )  }{\exp( z ) } \\\
+		&= \frac{e ^{i\pi} e ^{-\alpha \pi i}}{e^{i\pi}} = e ^{- \alpha \pi i}.
 \end{align}
 
 Así podemos despejar la integral de interes $I$  como
 
 \begin{align}
-		I &= \frac{ 2\pi i e ^{- \alpha \pi i}}{1- e ^{2\pi i} e^{- \alpha \pi i}} = \pi \frac{2i }{e ^{ \alpha \pi i} - e ^{- \alpha \pi i}} \\
-		  &= \frac{\pi}{\sin( \pi \alpha ) } \\
+		I &= \frac{ 2\pi i e ^{- \alpha \pi i}}{1- e ^{2\pi i} e^{- \alpha \pi i}} = \pi \frac{2i }{e ^{ \alpha \pi i} - e ^{- \alpha \pi i}} \\\
+		  &= \frac{\pi}{\sin( \pi \alpha ) } \\\
 		\therefore  \Gamma(  \alpha )  \Gamma( 1 -  \alpha )  &= \frac{\pi}{\sin( \pi z ) } .
 \end{align}
 
