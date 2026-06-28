@@ -27,7 +27,7 @@
       <link>http://localhost:1313/blogs/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
       <guid>http://localhost:1313/blogs/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;&lt;p&gt;Sea $ \mathcal{M} $ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico,  sean  $ x: \mathcal{M} \to \mathbb{R}^4 $ y $ x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4 $ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.&#xA;Deseamos una aplicación lineal $A$ que tome componentes $x_i$ y las mande las componentes  $x^\prime_i$&lt;/p&gt;</description>
+      <description>&lt;p&gt;En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.&#xA;Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.&#xA;Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Una deducción con algebras de Lie de una transformación de Lorentz</title>
@@ -41,7 +41,7 @@
       <link>http://localhost:1313/projects/proto1/</link>
       <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/proto1/</guid>
-      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;p&gt;I have to enumerate the functionalities that supplies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-details&#34;&gt;Technical Details&lt;/h2&gt;&#xA;&lt;p&gt;I have to add here the articles references of the numerical methods that uses.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
@@ -63,6 +63,20 @@
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/fraunhoffer/</guid>
       <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Geometría Simplectica en Mecánica Clásica</title>
+      <link>http://localhost:1313/projects/geo-simplectica/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/geo-simplectica/</guid>
+      <description>&lt;p&gt;Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica&#xA;clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-&#xA;sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en&#xA;mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
+      <link>http://localhost:1313/projects/termo-bidim/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/termo-bidim/</guid>
+      <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hola mundo</title>

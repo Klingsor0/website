@@ -103,7 +103,9 @@ window.MathJax = {
 <div class="post-content">
 	
 	
-	<p>En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.
+	<p>En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.
+Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.
+Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.
 Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.</p>
 <p>Sea $ \mathcal{M} $ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico,  sean  $ x: \mathcal{M} \to \mathbb{R}^4 $ y $ x&rsquo;: \mathcal{M} \to \mathbb{R}^4 $ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.
 Deseamos una aplicación lineal $A$ que tome componentes $x_i$ y las mande las componentes  $x^\prime_i$</p>
@@ -209,10 +211,10 @@ Expandamos en series</p>
 <p>evaluemos los términos que tenemos aquí. Primeramente recurrimos a las definiciones logarítmicas y exponenciales del funciones trigonométricas hiperbólicas.
 El seno y coseno hiperbólico de $\tanh ^{-1} (\beta) = \frac{1}{2} \ln\left( \frac{1+ \beta}{1-\beta} \right) $ es</p>
 <p>\begin{align*}
-\sinh \left( \tanh ^{-1} \beta \right) &amp;= \frac{1}{2} \left{ \exp \left( \ln \sqrt{\frac{1+ \beta}{1-\beta}} \right) - \exp \left( \ln \sqrt{\frac{1- \beta}{1+\beta}} \right)  \right}  \\
+\sinh \left( \tanh ^{-1} \beta \right) &amp;= \frac{1}{2} \left\lbrace \exp \left( \ln \sqrt{\frac{1+ \beta}{1-\beta}} \right) - \exp \left( \ln \sqrt{\frac{1- \beta}{1+\beta}} \right)  \right\rbrace  \\
 &amp;= \frac{1}{2} \left( \frac{\sqrt{(1+ \beta)^2} - \sqrt{(1-\beta)^2}  }{\sqrt{1-\beta^2}  } \right) = \frac{1}{2} \left(\frac{1+\beta -1 +\beta}{\sqrt{1-\beta ^2} }  \right)  \\
 &amp;= \gamma \beta\\
-\cosh \left( \tanh ^{-1} \beta \right) &amp;= \frac{1}{2} \left{ \exp \left( \ln \sqrt{\frac{1+ \beta}{1-\beta}} \right) + \exp \left( \ln \sqrt{\frac{1- \beta}{1+\beta}} \right)  \right}  \\
+\cosh \left( \tanh ^{-1} \beta \right) &amp;= \frac{1}{2} \left\lbrace \exp \left( \ln \sqrt{\frac{1+ \beta}{1-\beta}} \right) + \exp \left( \ln \sqrt{\frac{1- \beta}{1+\beta}} \right)  \right\rbrace  \\
 &amp;= \frac{1}{2} \left( \frac{\sqrt{(1+ \beta)^2} - \sqrt{(1-\beta)^2}  }{\sqrt{1-\beta^2}  } \right) = \frac{1}{2} \left(\frac{1+\beta +1 -\beta}{\sqrt{1-\beta ^2} }  \right)  \\
 &amp;= \gamma
 .\end{align*}</p>
@@ -220,17 +222,17 @@ El seno y coseno hiperbólico de $\tanh ^{-1} (\beta) = \frac{1}{2} \ln\left( \f
 $$A = - \hat{\beta} \cdot K \gamma \beta + \left( \hat{\beta} \cdot K \right)^2 (\gamma - 1) + I $$<p>sencillamente falta evaluar el valor matricial $\hat{\beta}\cdot K$ y su cuadrático</p>
 <p>\begin{align*}
 \hat{\beta} \cdot K &amp;= \frac{1}{\beta} \left( \beta_1 K_1 + \beta_2 K_2 + \beta_3 K_3 \right) \\
-&amp;= \frac{1}{\beta} \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \ \beta_1 &amp; &amp; &amp; \ \beta_2 &amp; &amp; &amp; \ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  \\
-\implies (\hat{\beta} \cdot K)^2 &amp;= \frac{1}{\beta^2} \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}  \
+&amp;= \frac{1}{\beta} \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \\ \beta_1 &amp; &amp; &amp; \\ \beta_2 &amp; &amp; &amp; \\ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  \\
+\implies (\hat{\beta} \cdot K)^2 &amp;= \frac{1}{\beta^2} \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \\ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \\ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \\ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}<br>
 .\end{align*}</p>
 <p>sustituyamos en la expresión para $A$ y tenemos</p>
-<p>\begin{align*}
-A &amp;= - \frac{\gamma \beta}{\beta}  \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \ \beta_1 &amp; &amp; &amp; \ \beta_2 &amp; &amp; &amp; \ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  +
-\frac{\gamma - 1}{\beta^2}    \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}   +I\
+<p>\begin{align}
+A &amp;= - \frac{\gamma \beta}{\beta}  \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \\ \beta_1 &amp; &amp; &amp; \\ \beta_2 &amp; &amp; &amp; \\ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  +
+/gfrac{\gamma - 1}{\beta^2}    \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \\ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \\ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \\ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}   +I\\
 &amp;=<br>
-\begin{pmatrix}\gamma-1 &amp; -\beta_1 \gamma &amp; -\beta_2 \gamma&amp; -\beta_3 \gamma \ -\beta_1 \gamma &amp; \beta_1^2\frac{\gamma -1}{\beta} &amp; \beta_1 \beta_2 \frac{\gamma -1}{\beta}&amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}\ -\beta_2\gamma &amp; \beta_1\beta_2 \frac{\gamma -1}{\beta}&amp; \beta_2^2 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta}\ -\beta_3 \gamma &amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta} &amp; \beta_3^2\frac{\gamma -1}{\beta} \end{pmatrix}   +I\
-&amp;=	   \begin{pmatrix} \gamma -1 + 1 &amp; -\gamma \beta_1 &amp; -\gamma_2 \beta_2&amp; -\gamma \beta_3 \ \gamma \beta_1 &amp; 1+ (\gamma -1)\frac{\beta_1^2}{\beta} &amp;(\gamma -1) \beta_1 \beta_2 &amp; (\gamma -1)  \frac{\beta_1\beta_3 }{\beta} \ -\gamma \beta_2 &amp; \frac{\gamma -1}{\beta} &amp; 1+(\gamma - 1) \frac{\beta_2^2}{\beta}  &amp; \frac{\gamma -1 }{}\beta\ -\gamma \beta_3 &amp; (\gamma -1) \frac{\beta_1\beta_3}{\beta} &amp; (\gamma -1) \frac{\beta_2 \beta_3}{\beta}  &amp; 1 + (\gamma -1) \frac{\beta_3^2}{\beta}\end{pmatrix}<br>
-.\end{align*}</p>
+\begin{pmatrix}\gamma-1 &amp; -\beta_1 \gamma &amp; -\beta_2 \gamma&amp; -\beta_3 \gamma \\ -\beta_1 \gamma &amp; \beta_1^2\frac{\gamma -1}{\beta} &amp; \beta_1 \beta_2 \frac{\gamma -1}{\beta}&amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}\ -\beta_2\gamma &amp; \beta_1\beta_2 \frac{\gamma -1}{\beta}&amp; \beta_2^2 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta}\\ -\beta_3 \gamma &amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta} &amp; \beta_3^2\frac{\gamma -1}{\beta} \end{pmatrix}   +I\\
+&amp;=	   \begin{pmatrix} \gamma -1 + 1 &amp; -\gamma \beta_1 &amp; -\gamma_2 \beta_2&amp; -\gamma \beta_3 \\ \gamma \beta_1 &amp; 1+ (\gamma -1)\frac{\beta_1^2}{\beta} &amp;(\gamma -1) \beta_1 \beta_2 &amp; (\gamma -1)  \frac{\beta_1\beta_3 }{\beta} \\ -\gamma \beta_2 &amp; \frac{\gamma -1}{\beta} &amp; 1+(\gamma - 1) \frac{\beta_2^2}{\beta}  &amp; \frac{\gamma -1 }{}\beta\\ -\gamma \beta_3 &amp; (\gamma -1) \frac{\beta_1\beta_3}{\beta} &amp; (\gamma -1) \frac{\beta_2 \beta_3}{\beta}  &amp; 1 + (\gamma -1) \frac{\beta_3^2}{\beta}\end{pmatrix}<br>
+.\end{align}</p>
 <p>Por lo tanto</p>
 \[
 	A=	   \begin{pmatrix} \gamma  & -\gamma \beta_1 & -\gamma_2 \beta_2& -\gamma \beta_3 \\ \gamma \beta_1 & 1+ (\gamma -1)\frac{\beta_1^2}{\beta} &(\gamma -1) \beta_1 \beta_2 & (\gamma -1)  \frac{\beta_1\beta_3 }{\beta} \\ -\gamma \beta_2 & \frac{\gamma -1}{\beta} & 1+(\gamma - 1) \frac{\beta_2^2}{\beta}  & \frac{\gamma -1 }{}\beta\\ -\gamma \beta_3 & (\gamma -1) \frac{\beta_1\beta_3}{\beta} & (\gamma -1) \frac{\beta_2 \beta_3}{\beta}  & 1 + (\gamma -1) \frac{\beta_3^2}{\beta}\end{pmatrix}   

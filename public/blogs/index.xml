@@ -20,7 +20,7 @@
       <link>http://localhost:1313/blogs/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
       <guid>http://localhost:1313/blogs/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;&lt;p&gt;Sea $ \mathcal{M} $ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico,  sean  $ x: \mathcal{M} \to \mathbb{R}^4 $ y $ x&amp;rsquo;: \mathcal{M} \to \mathbb{R}^4 $ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.&#xA;Deseamos una aplicación lineal $A$ que tome componentes $x_i$ y las mande las componentes  $x^\prime_i$&lt;/p&gt;</description>
+      <description>&lt;p&gt;En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.&#xA;Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.&#xA;Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
