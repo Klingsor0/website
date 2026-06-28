@@ -1,0 +1,26 @@
+<nav class="main-nav" aria-label="Main navigation">
+    <ul>
+        {{- $currentPage := . -}}
+        {{- range $i, $entry := .Site.Menus.main -}}
+            {{- if .HasChildren -}}
+                <li class="dropdown{{ if $currentPage.HasMenuCurrent "main" . }} menu-current{{ end }}">
+                    <a href="{{- .URL -}}" class="dropdown-toggle" style="color: var(--nav-color-{{ mod $i 7 }})" aria-haspopup="true" aria-expanded="false">
+                        {{- .Name -}}
+                        <span class="caret" aria-hidden="true">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        {{- range $j, $child := .Children -}}
+                            <li{{ if $currentPage.IsMenuCurrent "main" . }} class="menu-current"{{ end }}>
+                                <a href="{{- $child.URL -}}" style="color: var(--nav-color-{{ mod (add $i $j 1) 7 }})">{{- $child.Name -}}</a>
+                            </li>
+                        {{- end -}}
+                    </ul>
+                </li>
+            {{- else -}}
+                <li{{ if $currentPage.IsMenuCurrent "main" . }} class="menu-current"{{ end }}>
+                    <a href="{{- .URL -}}" style="color: var(--nav-color-{{ mod $i 7 }})">{{- .Name -}}</a>
+                </li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</nav>

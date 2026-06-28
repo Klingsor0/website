@@ -90,6 +90,18 @@ items = ["Python", "R", "Bash", "Fortran"]
 category = "Frameworks & Tools"
 items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCAD", "Onshape"]
 
+[[params.socialIcons]]
+  name = "GitHub"
+  url = "https://github.com/klingsor0"
+
+[[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/edgar-ivan-hinojosa-saldaña-95273b260"
+
+[[params.socialIcons]]
+  name = "Email"
+  url = "mailto:e_e.ivan.h_hs@outlook.com"
+
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
