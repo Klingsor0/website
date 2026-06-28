@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mathematical Physics on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:1313/tags/mathematical-physics/</link>
+    <link>https://edgarivanhinojosa.xyz/tags/mathematical-physics/</link>
     <description>Recent content in Mathematical Physics on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mathematical-physics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edgarivanhinojosa.xyz/tags/mathematical-physics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Geometría Simplectica en Mecánica Clásica</title>
-      <link>http://localhost:1313/projects/geo-simplectica/</link>
+      <link>https://edgarivanhinojosa.xyz/projects/geo-simplectica/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/geo-simplectica/</guid>
+      <guid>https://edgarivanhinojosa.xyz/projects/geo-simplectica/</guid>
       <description>&lt;p&gt;Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica&#xA;clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-&#xA;sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en&#xA;mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.&lt;/p&gt;</description>
     </item>
   </channel>

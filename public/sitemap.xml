@@ -2,89 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://edgarivanhinojosa.xyz/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/gamma-identidad/</loc>
+    <loc>https://edgarivanhinojosa.xyz/blogs/gamma-identidad/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/lorentz-transform/</loc>
+    <loc>https://edgarivanhinojosa.xyz/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/lorentz-transform/</loc>
+    <loc>https://edgarivanhinojosa.xyz/blogs/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writings/lorentz-transform/</loc>
+    <loc>https://edgarivanhinojosa.xyz/writings/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writings/</loc>
+    <loc>https://edgarivanhinojosa.xyz/writings/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blogs/</loc>
+    <loc>https://edgarivanhinojosa.xyz/blogs/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://edgarivanhinojosa.xyz/about/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/image-processing/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/image-processing/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/proto1/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/proto1/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lasers/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/lasers/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/python/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/experimental-physics/</loc>
+    <loc>https://edgarivanhinojosa.xyz/research/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://edgarivanhinojosa.xyz/tags/experimental-physics/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fractional-calculus/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/fractional-calculus/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/instrumentation/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/instrumentation/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/gelatina-fraccional/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/high-precision-sensors/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/high-precision-sensors/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/hall/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/hall/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/laser/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/laser/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/fraunhoffer/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/fraunhoffer/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/geo-simplectica/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/geo-simplectica/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mathematical-physics/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/mathematical-physics/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/symplectic-geometry/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/symplectic-geometry/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/termo-bidim/</loc>
+    <loc>https://edgarivanhinojosa.xyz/projects/termo-bidim/</loc>
     <lastmod>2023-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/heat-transfer/</loc>
+    <loc>https://edgarivanhinojosa.xyz/tags/heat-transfer/</loc>
     <lastmod>2023-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://edgarivanhinojosa.xyz/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/writings/proto2/</loc>
+    <loc>https://edgarivanhinojosa.xyz/cv/</loc>
+  </url><url>
+    <loc>https://edgarivanhinojosa.xyz/extended-cv/</loc>
+  </url><url>
+    <loc>https://edgarivanhinojosa.xyz/writings/proto2/</loc>
+  </url><url>
+    <loc>https://edgarivanhinojosa.xyz/search/</loc>
   </url>
 </urlset>

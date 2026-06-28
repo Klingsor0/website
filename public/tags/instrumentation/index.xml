@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instrumentation on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:1313/tags/instrumentation/</link>
+    <link>https://edgarivanhinojosa.xyz/tags/instrumentation/</link>
     <description>Recent content in Instrumentation on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://edgarivanhinojosa.xyz/tags/instrumentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
-      <link>http://localhost:1313/projects/gelatina-fraccional/</link>
+      <link>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/gelatina-fraccional/</guid>
+      <guid>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</guid>
       <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Measuring Hall Effect in Bismuth</title>
-      <link>http://localhost:1313/projects/hall/</link>
+      <link>https://edgarivanhinojosa.xyz/projects/hall/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hall/</guid>
+      <guid>https://edgarivanhinojosa.xyz/projects/hall/</guid>
       <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Medición de longitud de onda por difracción circular</title>
-      <link>http://localhost:1313/projects/fraunhoffer/</link>
+      <link>https://edgarivanhinojosa.xyz/projects/fraunhoffer/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/fraunhoffer/</guid>
+      <guid>https://edgarivanhinojosa.xyz/projects/fraunhoffer/</guid>
       <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
-      <link>http://localhost:1313/projects/termo-bidim/</link>
+      <link>https://edgarivanhinojosa.xyz/projects/termo-bidim/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/termo-bidim/</guid>
+      <guid>https://edgarivanhinojosa.xyz/projects/termo-bidim/</guid>
       <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
     </item>
   </channel>
