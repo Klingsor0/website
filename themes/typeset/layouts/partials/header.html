@@ -1,0 +1,34 @@
+<header>
+    <div class="site-header">
+        <div class="logo">
+            <a href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }}">
+                <span class="site-title-text">
+                {{- $titleColors := slice "#f5a547" "#f6be33" "#a2c292" -}}
+                {{- $words := split .Site.Title " " -}}
+                {{- range $i, $word := $words -}}
+                    {{- $color := index $titleColors (mod $i (len $titleColors)) -}}
+                    <span style="color: {{ $color }}">{{ $word }}</span>{{ if lt (add $i 1) (len $words) }} {{ end -}}
+                {{- end -}}
+                </span>
+            </a>
+        </div>
+        
+        <!-- Hamburger menu button (only visible on mobile) -->
+        <button class="hamburger-button" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-icon"></span>
+        </button>
+        
+        <div class="theme-switcher">
+            <button class="theme-menu-toggle" id="theme-menu-toggle" aria-label="Select theme" aria-expanded="false" aria-haspopup="true">
+                <span id="theme-current-icon">🎨</span>
+                <span class="theme-menu-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="theme-menu" id="theme-menu" role="menu">
+                {{- range site.Data.themes }}
+                <li role="none"><button class="theme-option" role="menuitem" data-theme="{{ .name }}"><span class="theme-icon">{{ .icon }}</span> {{ .label }}</button></li>
+                {{- end }}
+            </ul>
+        </div>
+    </div>
+    {{ partial "nav.html" . }}
+</header>

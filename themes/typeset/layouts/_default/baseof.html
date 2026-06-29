@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="light">
+<head>
+	{{- partialCached "meta.html" . .RelPermalink -}}
+    {{- partialCached "head.html" . .RelPermalink -}}
+    <style>
+    /* Critical CSS to fix dropdown menus */
+    .dropdown-menu {
+        display: none !important;
+        padding-top: 10px !important;
+        margin-top: -10px !important;
+    }
+    .dropdown:hover > .dropdown-menu,
+    .dropdown:focus-within > .dropdown-menu {
+        display: block !important;
+    }
+    /* Immediate background/colour for all themes to prevent flash before theme CSS loads */
+    {{- range site.Data.themes }}{{ if .fouc_bg }}
+    html[data-theme="{{ .name }}"] { background-color: {{ .fouc_bg }}; color: {{ .fouc_text }}; }{{ end }}{{ end }}
+    </style>
+
+	<meta name="fediverse:creator" content="@dnorman@cosocial.ca">
+	
+	
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    {{- if site.Params.enableCanvasAnimation }}
+    <!-- Retro particle animation background -->
+    <div class="canvas-background">
+        <canvas id="retroCanvas" aria-hidden="true"></canvas>
+    </div>
+    {{- end }}
+
+    <div class="container">
+        {{- partialCached "header.html" . .Section -}}
+        <main id="main-content">
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{- partialCached "footer.html" . .RelPermalink -}}
+    </div>
+    {{- partialCached "js-bundle.html" "static" "static" -}}
+</body>
+</html>

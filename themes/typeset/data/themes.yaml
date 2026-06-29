@@ -1,0 +1,11 @@
+- name: light
+  file: light.css
+  icon: "☀️"
+  label: Light
+
+- name: dark
+  file: dark.css
+  icon: "🌙"
+  label: Dark
+  fouc_bg: "#1a1a1a"
+  fouc_text: "#e0e0e0"
