@@ -7,4 +7,4 @@ date: 2023-11-24
 tags: ["Instrumentation", "Heat transfer", "Experimental Physics"]
 readmore: false
 ---
-Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.
+An experimental setup was designed and executed to verify the two-dimensional temperature gradient described by Fourier's law of heat conduction.

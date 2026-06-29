@@ -7,5 +7,5 @@ tags: ["Instrumentation", "High Precision Sensors", "Experimental Physics"]
 image: "/images/hall-effect.jpeg"
 readmore: false
 ---
-Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.
+Measurement of the Hall effect using thin bismuth films produced without specialized equipment.
 

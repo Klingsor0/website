@@ -24,7 +24,7 @@
 <title>Mathematical Physics - Edgar Ivan Hinojosa</title>
 <meta name="description" content="">
 
-<link rel="stylesheet" href="/css/main.min.84ff5a518438e5c166e3d50eef13ee0416e3f10fa282943e992dc5fe401e86f4.css">
+<link rel="stylesheet" href="/css/main.min.3a71c358b5ab7df65587475741b83b02aeb1767e58d6bd046175212f7702febb.css">
 
 <script>
   window.themeCSS = {"dark":"/css/dark.min.2d79a54765b770dec1586721c635024eb7d43e87497649c87d825906f2b7cb77.css","light":"/css/light.min.ecb3fdb930acd6bf351d37e338d0b119cdd983c315bcbeb7191c083b548868b7.css"};
@@ -73,8 +73,12 @@
 <meta name="twitter:image" content="https://edgarivanhinojosa.xyz/og-image.png"><link rel="alternate" type="application/rss+xml" href="https://edgarivanhinojosa.xyz/tags/mathematical-physics/index.xml" title="Edgar Ivan Hinojosa" /><script>
   MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>

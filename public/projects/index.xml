@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Edgar Ivan Hinojosa</title>
-    <link>https://edgarivanhinojosa.xyz/projects/</link>
+    <link>http://localhost:35309/projects/</link>
     <description>Recent content in Projects on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://edgarivanhinojosa.xyz/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35309/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Laser-track</title>
-      <link>https://edgarivanhinojosa.xyz/projects/proto1/</link>
+      <link>http://localhost:35309/projects/proto1/</link>
       <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/proto1/</guid>
+      <guid>http://localhost:35309/projects/proto1/</guid>
       <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
-      <link>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</link>
+      <title>Fractional Model of Gelatin Viscoelasticity</title>
+      <link>http://localhost:35309/projects/gelatina-fraccional/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</guid>
-      <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/gelatina-fraccional/</guid>
+      <description>&lt;p&gt;We experimentally test a fractional calculus model with minimal instrumentation, using simple rheological methods.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Measuring Hall Effect in Bismuth</title>
-      <link>https://edgarivanhinojosa.xyz/projects/hall/</link>
+      <link>http://localhost:35309/projects/hall/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/hall/</guid>
-      <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/hall/</guid>
+      <description>&lt;p&gt;Measurement of the Hall effect using thin bismuth films produced without specialized equipment.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Medición de longitud de onda por difracción circular</title>
-      <link>https://edgarivanhinojosa.xyz/projects/fraunhoffer/</link>
+      <title>Wavelength Measurement by Circular Diffraction</title>
+      <link>http://localhost:35309/projects/fraunhoffer/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/fraunhoffer/</guid>
-      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/fraunhoffer/</guid>
+      <description>&lt;p&gt;An intensity analysis of photographs and their diffraction patterns was performed to estimate the wavelength of a laser.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Geometría Simplectica en Mecánica Clásica</title>
-      <link>https://edgarivanhinojosa.xyz/projects/geo-simplectica/</link>
+      <title>Symplectic Geometry in Classical Mechanics</title>
+      <link>http://localhost:35309/projects/geo-simplectica/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/geo-simplectica/</guid>
-      <description>&lt;p&gt;Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica&#xA;clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-&#xA;sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en&#xA;mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/geo-simplectica/</guid>
+      <description>&lt;p&gt;We investigate the rich structural properties of phase space on which classical mechanics rests. Before doing so, we briefly review the mathematical results that will be used in developing more important findings. We physically motivate the proposal of the symplectic structure in classical mechanics. Finally, we present an example of solving a problem using these tools.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
-      <link>https://edgarivanhinojosa.xyz/projects/termo-bidim/</link>
+      <link>http://localhost:35309/projects/termo-bidim/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/termo-bidim/</guid>
-      <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/termo-bidim/</guid>
+      <description>&lt;p&gt;An experimental setup was designed and executed to verify the two-dimensional temperature gradient described by Fourier&amp;rsquo;s law of heat conduction.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

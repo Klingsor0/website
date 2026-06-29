@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme="light">
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35309&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -13,22 +13,22 @@
 <meta name="author" content="">
 
 
-<meta property="og:title" content="Transformada de Lorentz general por generadores de grupo-Edgar Ivan Hinojosa">
+<meta property="og:title" content="General Lorentz Transformation via Group Generators-Edgar Ivan Hinojosa">
 <meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://edgarivanhinojosa.xyz/blogs/lorentz-transform/">
+<meta property="og:url" content="http://localhost:35309/blogs/lorentz-transform/">
 <meta property="article:published_time" content="2026-02-12T15:52:52-06:00"><meta property="article:modified_time" content="2026-02-12T15:52:52-06:00">
-<link rel="canonical" href="https://edgarivanhinojosa.xyz/blogs/lorentz-transform/">
+<link rel="canonical" href="http://localhost:35309/blogs/lorentz-transform/">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Transformada de Lorentz general por generadores de grupo - Edgar Ivan Hinojosa</title>
-<meta name="description" content="En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.
-Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.
-Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.
-Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.">
+<title>General Lorentz Transformation via Group Generators - Edgar Ivan Hinojosa</title>
+<meta name="description" content="In this post we derive the functional form of a generic Lorentz transformation from its group generators.
+At first glance I considered this trivial, as I was unaware of the role played by their non-commutativity — which made it an interesting exercise to present.
+We follow Chapter 11 of Jackson (Third Edition), which makes use of the mathematical properties of Minkowski spacetime.
+Clarifications missing from the book are supplied with original arguments.">
 
-<link rel="stylesheet" href="/css/main.min.84ff5a518438e5c166e3d50eef13ee0416e3f10fa282943e992dc5fe401e86f4.css">
+<link rel="stylesheet" href="/css/main.min.3a71c358b5ab7df65587475741b83b02aeb1767e58d6bd046175212f7702febb.css">
 
 <script>
   window.themeCSS = {"dark":"/css/dark.min.2d79a54765b770dec1586721c635024eb7d43e87497649c87d825906f2b7cb77.css","light":"/css/light.min.ecb3fdb930acd6bf351d37e338d0b119cdd983c315bcbeb7191c083b548868b7.css"};
@@ -66,7 +66,7 @@ Se realizarán precisiones donde falten en el libro con apoyo de argumentos orig
 <meta name="msapplication-TileColor" content="#F5F0E8">
 <meta name="msapplication-config" content="/browserconfig.xml">
 
-<meta property="og:image" content="https://edgarivanhinojosa.xyz/og-image.png">
+<meta property="og:image" content="http://localhost:35309/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Edgar Ivan Hinojosa">
@@ -74,11 +74,15 @@ Se realizarán precisiones donde falten en el libro con apoyo de argumentos orig
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://edgarivanhinojosa.xyz/og-image.png"><script>
+<meta name="twitter:image" content="http://localhost:35309/og-image.png"><script>
   MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>
@@ -107,7 +111,7 @@ Se realizarán precisiones donde falten en el libro con apoyo de argumentos orig
     <div class="container"><header>
     <div class="site-header">
         <div class="logo">
-            <a href="https://edgarivanhinojosa.xyz/" aria-label="Edgar Ivan Hinojosa">
+            <a href="http://localhost:35309/" aria-label="Edgar Ivan Hinojosa">
                 <span class="site-title-text"><span style="color: #f5a547">Edgar</span> <span style="color: #f6be33">Ivan</span> <span style="color: #a2c292">Hinojosa</span></span>
             </a>
         </div>
@@ -160,7 +164,7 @@ Se realizarán precisiones donde falten en el libro con apoyo de argumentos orig
             
 <article class="content">
     <header>
-        <h1>Transformada de Lorentz general por generadores de grupo</h1>
+        <h1>General Lorentz Transformation via Group Generators</h1>
 			
 				<time datetime="2026-02-12">February 12, 2026</time>
 				
@@ -173,58 +177,58 @@ Se realizarán precisiones donde falten en el libro con apoyo de argumentos orig
     
 
     <div class="article-content">
-        <p>En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.
-Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.
-Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.
-Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.</p>
-<p>Sea $ \mathcal{M} $ un espacio tiempo de Minkowski, pensemos en él como el espacio tiempo físico,  sean  $ x: \mathcal{M} \to \mathbb{R}^4 $ y $ x&rsquo;: \mathcal{M} \to \mathbb{R}^4 $ cartas que mandan eventos de este espacio tiempo a un espacio vectorial de Minkowski.
-Deseamos una aplicación lineal $A$ que tome componentes $x_i$ y las mande las componentes  $x^\prime_i$</p>
+        <p>In this post we derive the functional form of a generic Lorentz transformation from its group generators.
+At first glance I considered this trivial, as I was unaware of the role played by their non-commutativity — which made it an interesting exercise to present.
+We follow Chapter 11 of Jackson (Third Edition), which makes use of the mathematical properties of Minkowski spacetime.
+Clarifications missing from the book are supplied with original arguments.</p>
+<p>Let $ \mathcal{M} $ be a Minkowski spacetime, thought of as physical spacetime, and let $ x: \mathcal{M} \to \mathbb{R}^4 $ and $ x&rsquo;: \mathcal{M} \to \mathbb{R}^4 $ be charts mapping events of this spacetime to a Minkowski vector space.
+We seek a linear map $A$ that takes components $x_i$ to components $x^\prime_i$</p>
 <p>\begin{equation}
 Ax =x'
 \end{equation}</p>
-<p>siendo sobre y uno a uno, además lineal, pero sobre todo que preserve la estructura del espacio tiempo.
-Esto último es que el intervalo espacio tiempo se preserve, definido del siguiente modo:
-Siendo $V$ un espacio vecotorial Minkowski existe un isomorfismo $\overline{g}$ entre el $V$ y su dual $V^\ast$ $\overline{g}: V \to V^\ast$ tal que si tomamos las bases canónicas de ambas se cumple la siguiente relación</p>
+<p>being surjective and injective, linear, and above all preserving the spacetime structure.
+This last condition means the spacetime interval is preserved, defined as follows:
+For $V$ a Minkowski vector space there exists an isomorphism $\overline{g}$ between $V$ and its dual $V^\ast$, $\overline{g}: V \to V^\ast$, such that taking the canonical bases of both we have the relation</p>
 $$
 \overline{g}(e_i) = e^i \forall i \neq 0
-$$$$\overline{g}(e_0) = - e^0$$<p>denotemos como $(u, v)$ a la aplicación del covector  $u \in V^*$ sobre el vector $v \in V$, su evaluación $(u,u)$ es el intervalo espacio tiempo del evento  $u$.
-Dada esta aplicación bilineal simetrica existe una forma cuadrática a través de una matriz $g$ tal que</p>
+$$$$\overline{g}(e_0) = - e^0$$<p>Denote by $(u, v)$ the action of the covector $u \in V^*$ on the vector $v \in V$; the evaluation $(u,u)$ is the spacetime interval of the event $u$.
+Given this symmetric bilinear form there exists a quadratic form via a matrix $g$ such that</p>
 $$
 u^T g v = (\overline{g}(u), v)
-$$<p>Dado el isomorfismo $\overline{g}$, la matriz $g$ debe ser de la forma</p>
-$$g = \begin{pmatrix} -1 & & & \\ & 1 & & \\ & & 1 & \\ & & & 1 \end{pmatrix} $$<p>y las transformaciones de Lorentz dadas la forma cuadrática satisfacen</p>
+$$<p>Given the isomorphism $\overline{g}$, the matrix $g$ must take the form</p>
+$$g = \begin{pmatrix} -1 & & & \\ & 1 & & \\ & & 1 & \\ & & & 1 \end{pmatrix} $$<p>and Lorentz transformations given this quadratic form satisfy</p>
 <p>\begin{equation}
 x^T g x = x&rsquo;^T g x&rsquo; \implies (Ax)^T g (Ax) = xg x \implies A^T g A = g
 \label{lorentz}
 \end{equation}</p>
-<p>De aquí observamos la primera propiedad, y es que</p>
-$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$<p>Dado a que consideraremos únicamente transformaciones propias de Lorentz restringimos $det(A) = 1$, esto no es más que definir una orientación.
-De \eqref{lorentz} tenemos que los coeficientes de la matriz $g$ cumplen el siguiente sistema de ecuaciones</p>
-$$a_{ij} g_{jl} a_{lk} = g_{ik}$$<p>la simetría de la matriz $g$ reduce el número de ecuaciones independientes de 16 a 10
-lo cuál nos da una forma de coordenar a las componentes con 6 números.
-3 de ellos son ángulos para rotaciones espaciales ordinarias, los otros tres de los boosts o rotaciones hiperbólicas de los que principalmente estamos interesados.
-En esta solución usaremos al generador $L$ para  $A$</p>
-$$A = e^L$$<p>indaguemos en sus propiedades.
-Sabemos que el determinante  de $A$ es unitario así que se debe cumplir</p>
-$$det(A) = e^{trL} =1 \implies trL =0 $$<p>recordemos que la traza de una matriz es la suma de los valores característicos de esta, por tanto si llegasemos a suponer que $L$ es solamente boost sus eigenvalores son tres $\lambda_i$ y cumplen</p>
+<p>From this we observe the first property, namely that</p>
+$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$<p>Since we consider only proper Lorentz transformations we restrict to $det(A) = 1$, which is simply a choice of orientation.
+From \eqref{lorentz} the coefficients of $g$ satisfy the system of equations</p>
+$$a_{ij} g_{jl} a_{lk} = g_{ik}$$<p>The symmetry of $g$ reduces the number of independent equations from 16 to 10,
+which gives us a way to parameterize the components with 6 numbers.
+Three of them are angles for ordinary spatial rotations; the other three are for boosts (hyperbolic rotations), which are our primary interest.
+In this solution we use the generator $L$ for $A$</p>
+$$A = e^L$$<p>Let us investigate its properties.
+We know that the determinant of $A$ is unity, so we must have</p>
+$$det(A) = e^{trL} =1 \implies trL =0 $$<p>Recall that the trace of a matrix is the sum of its eigenvalues, so if we suppose that $L$ is a pure boost its three eigenvalues $\lambda_i$ satisfy</p>
 <p>\begin{equation}
 \lambda_1 + \lambda_2 + \lambda_3 =0.
 \label{eigen}
 \end{equation}</p>
-<p>Manipulemos un poco la ecuación (1) a sabiendas de que $g^2=I$</p>
-$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$<p>tomando la definición del generador</p>
+<p>Let us manipulate equation (1) knowing that $g^2=I$</p>
+$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$<p>taking the definition of the generator</p>
 <p>\begin{align*}
 A^T &amp;= e^{L^T} \implies gA^Tg = e^{g L^Tg} \\
 \implies g^2 A^{-1} g^2 &amp;= A^{-1}= e^{g L^T g}\\
 \implies e^{-L} &amp;= e^{g L^T g}
 \end{align*}</p>
-<p>Esto nos da la siguiente propiedad</p>
+<p>This gives us the following property</p>
 <p>\begin{equation}
 -gL = gg L ^T g = L^T g = (gL)^T
 \label{antisimetria}
 \end{equation}</p>
-<p>quiere decir que $gL$ es anti simétrica i.e $(gL)_{ij} = -(gL)_{ji}$, analicemos indicialmente esta ecuación.
-Expandamos</p>
+<p>meaning that $gL$ is anti-symmetric, i.e. $(gL)_{ij} = -(gL)_{ji}$. Let us analyze this equation index by index.
+Expanding</p>
 <p>\begin{align*}
 (gL)_{ij} = g_{il} L_{lj} i&amp;= - g_{jl} L_{li} \\
 \implies g_{ii} L_{ij} &amp;= - g_{jj} L_{ji}  \\
@@ -233,37 +237,37 @@ Expandamos</p>
 \text{ si } i=0 j\neq 0: \ g_{00} L_{0j} &amp;= - g_{jj} L_{j_0} \implies -L_{0j} = - L_{j_0}\\
 \text{si \ } i\neq 0, j \neq 0: \ g_{ii} L_{ij} &amp;= - g_{jj} L_{ji} \implies L_{ij} = -L_{ji}
 .\end{align*}</p>
-<p>Por lo cuál $L$ es de la forma</p>
+<p>Therefore $L$ takes the form</p>
 \[
 		L = \begin{pmatrix} 0 & L_{01} & L_{02} & L{03} \\ 
 		L_{01} & 0 & L_{12} & L_{13} \\ 
 L_{02} & -L_{12} & 0 & L_{23} \\
 L_{03} & - L_{13} & -L_{23} & 0 \end{pmatrix} 
-.\]<p>Sabemos que dentro de las posibles transformaciones que incluye la forma general de $L$ están las rotaciones espaciales ordinarias que satisfacen
-$A A^T = I \implies L^T = -L$ por tanto ignoraremos las partes anti simétricas de esta forma general.
-Por lo tanto los generadores del grupo de rotaciones hiperbólicas en un espacio de Minkowski es el siguiente</p>
+.\]<p>We know that among the transformations contained in the general form of $L$ are ordinary spatial rotations satisfying
+$A A^T = I \implies L^T = -L$, so we discard the anti-symmetric parts of this general form.
+The generators of the hyperbolic rotation group in Minkowski space are therefore</p>
 \[
 		K_1 = \begin{pmatrix} 0 & 1 & 0 & 0 \\ 1& 0 & & \\ 0 & & 0 & \\ 0 &  & &  \end{pmatrix} , \ \ \ 
 		K_2 = \begin{pmatrix} 0 & 0 & 1 & 0 \\ 0& & & \\ 1 & & & \\ 0 & & &  \end{pmatrix} , \ \ \ 
 		K_2 = \begin{pmatrix} 0 & 0 & 0 & 1 \\ 0& & & \\ 0 & & & \\ 1 & & &  \end{pmatrix}  \ \ \ 
-.\]<p>Denotaremos a $\epsilon \cdot  K$ como una combinación lineal de las matrices esto es $\epsilon = \epsilon_1 K_1 + \epsilon_2 K_2 + \epsilon_3 K_3$.
-Si $\epsilon$ es un vector unitario, se cumple la siguiente igualdad $(\epsilon \cdot K)^3 = \epsilon \cdot K$.
-Esta propiedad se sostiene dado que los eigenvalores de una matriz cúbicamente idempotente son de la siguiente manera. Sea $F$ una matriz cúbicamente idempotente, supongamos que es diagonalizable</p>
+.\]<p>We denote $\epsilon \cdot  K$ as a linear combination of the matrices, i.e. $\epsilon = \epsilon_1 K_1 + \epsilon_2 K_2 + \epsilon_3 K_3$.
+If $\epsilon$ is a unit vector, then the equality $(\epsilon \cdot K)^3 = \epsilon \cdot K$ holds.
+This follows from the eigenvalues of a cubically idempotent matrix. Let $F$ be a cubically idempotent matrix; assuming it is diagonalizable</p>
 <p>\begin{align*}
 Fv &amp;= \lambda v \
 F^3 v &amp;= \lambda^3 v \implies \lambda^3 = \lambda\
 \lambda(\lambda^2 -1) &amp;= 0
 \end{align*}</p>
-<p>en conclusión una matriz cúbica idempotente tiene sus eigen valores son unitarios positivo, negativo o nulo.</p>
+<p>we conclude that a cubically idempotent matrix has eigenvalues that are $+1$, $-1$, or $0$.</p>
 $$det (gL^T) = det(-gL)$$$$\implies det(L) = - det(L) \implies det(L) =0$$<p>
-por lo tanto $L$ tiene al menos un eigenvalor nulo $\lambda_1=0$.
-Veamos el caso aún más particular de $\epsilon \cdot  K$, es fácil ver que tiene el siguiente eigen vector</p>
+therefore $L$ has at least one zero eigenvalue $\lambda_1=0$.
+Looking at the even more particular case of $\epsilon \cdot  K$, it is straightforward to verify the eigenvector</p>
 \[
 		  \begin{pmatrix} 0 & \epsilon_1 & \epsilon_2 & \epsilon_3 \\ \epsilon_1 & & & \\ \epsilon_2 & & & \\ \epsilon_3 & & & \end{pmatrix} \begin{pmatrix} 1 \\ \epsilon_1 \\ \epsilon_2 \\ \epsilon_3 \end{pmatrix} = \begin{pmatrix} \epsilon_1^2 + \epsilon_2^2 + \epsilon_3^2 \\ \epsilon_1 \\ \epsilon_2 \\ \epsilon_3 \end{pmatrix}  = 
 \begin{pmatrix} 1 \\ \epsilon_1 \\ \epsilon_2 \\ \epsilon_3 \end{pmatrix} 
   \]$$A = \exp(-\hat{\beta}\cdot K \tanh^{-1}\left( \beta \right) )$$<p>
-donde $\tanh ^{-1} \beta$ es el ángulo de rotación hiperbólica.
-Expandamos en series</p>
+where $\tanh ^{-1} \beta$ is the hyperbolic rotation angle.
+Expanding in series</p>
 <p>\begin{align*}
 \exp(-\tanh^{-1}\left( \beta \right) \hat{\beta} \cdot K ) &amp;= \sum_{n=0}^{\infty} \frac{\left( - \hat{\beta} \cdot K \tanh ^{-1} (\beta)\right)^n }{n!} \\
 &amp;= \sum_{n=0}^{\infty} \frac{\left( - \hat{\beta} \cdot K \tanh ^{-1} (\beta)\right)^{2n+1}	 }{(2n +1)!} +
@@ -278,8 +282,8 @@ Expandamos en series</p>
 &amp;= \left( - \hat{\beta} \cdot K \right)\sinh(\tanh ^{-1}\beta) +
 \left(  \hat{\beta} \cdot K\right)^{2} \cosh(\tanh ^{-1} \beta) + I - (\hat{\beta} \cdot K)^2\\
 .\end{align*}</p>
-<p>evaluemos los términos que tenemos aquí. Primeramente recurrimos a las definiciones logarítmicas y exponenciales del funciones trigonométricas hiperbólicas.
-El seno y coseno hiperbólico de $\tanh ^{-1} (\beta) = \frac{1}{2} \ln\left( \frac{1+ \beta}{1-\beta} \right) $ es</p>
+<p>Let us evaluate the terms we have here. We first resort to the logarithmic and exponential definitions of the hyperbolic trigonometric functions.
+The hyperbolic sine and cosine of $\tanh ^{-1} (\beta) = \frac{1}{2} \ln\left( \frac{1+ \beta}{1-\beta} \right) $ are</p>
 <p>\begin{align*}
 \sinh \left( \tanh ^{-1} \beta \right) &amp;= \frac{1}{2} \left\lbrace \exp \left( \ln \sqrt{\frac{1+ \beta}{1-\beta}} \right) - \exp \left( \ln \sqrt{\frac{1- \beta}{1+\beta}} \right)  \right\rbrace  \\
 &amp;= \frac{1}{2} \left( \frac{\sqrt{(1+ \beta)^2} - \sqrt{(1-\beta)^2}  }{\sqrt{1-\beta^2}  } \right) = \frac{1}{2} \left(\frac{1+\beta -1 +\beta}{\sqrt{1-\beta ^2} }  \right)  \\
@@ -288,14 +292,14 @@ El seno y coseno hiperbólico de $\tanh ^{-1} (\beta) = \frac{1}{2} \ln\left( \f
 &amp;= \frac{1}{2} \left( \frac{\sqrt{(1+ \beta)^2} - \sqrt{(1-\beta)^2}  }{\sqrt{1-\beta^2}  } \right) = \frac{1}{2} \left(\frac{1+\beta +1 -\beta}{\sqrt{1-\beta ^2} }  \right)  \\
 &amp;= \gamma
 .\end{align*}</p>
-<p>Por lo cual la transformación queda de la siguiente manera</p>
-$$A = - \hat{\beta} \cdot K \gamma \beta + \left( \hat{\beta} \cdot K \right)^2 (\gamma - 1) + I $$<p>sencillamente falta evaluar el valor matricial $\hat{\beta}\cdot K$ y su cuadrático</p>
+<p>Therefore the transformation becomes</p>
+$$A = - \hat{\beta} \cdot K \gamma \beta + \left( \hat{\beta} \cdot K \right)^2 (\gamma - 1) + I $$<p>It remains to evaluate the matrix $\hat{\beta}\cdot K$ and its square</p>
 <p>\begin{align*}
 \hat{\beta} \cdot K &amp;= \frac{1}{\beta} \left( \beta_1 K_1 + \beta_2 K_2 + \beta_3 K_3 \right) \\
 &amp;= \frac{1}{\beta} \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \\ \beta_1 &amp; &amp; &amp; \\ \beta_2 &amp; &amp; &amp; \\ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  \\
 \implies (\hat{\beta} \cdot K)^2 &amp;= \frac{1}{\beta^2} \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \\ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \\ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \\ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}<br>
 .\end{align*}</p>
-<p>sustituyamos en la expresión para $A$ y tenemos</p>
+<p>Substituting into the expression for $A$ we get</p>
 <p>\begin{align}
 A &amp;= - \frac{\gamma \beta}{\beta}  \begin{pmatrix} 0 &amp; \beta_1 &amp; \beta_2 &amp; \beta_3 \\ \beta_1 &amp; &amp; &amp; \\ \beta_2 &amp; &amp; &amp; \\ \beta_3 &amp; &amp; &amp;  \end{pmatrix}  +
 /gfrac{\gamma - 1}{\beta^2}    \begin{pmatrix} \beta_1^2 + \beta_2^2 + \beta_3^2 &amp; 0 &amp; 0&amp; 0 \\ 0 &amp; \beta_1^2 &amp; \beta_1 \beta_2 &amp; \beta_1\beta_3 \\ 0 &amp; \beta_1\beta_2 &amp; \beta_2^2 &amp; \beta_2 \beta_3 \\ 0 &amp; \beta_1\beta_3 &amp; \beta_2 \beta_3  &amp; \beta_3^2\end{pmatrix}   +I\\
@@ -303,7 +307,7 @@ A &amp;= - \frac{\gamma \beta}{\beta}  \begin{pmatrix} 0 &amp; \beta_1 &amp; \be
 \begin{pmatrix}\gamma-1 &amp; -\beta_1 \gamma &amp; -\beta_2 \gamma&amp; -\beta_3 \gamma \\ -\beta_1 \gamma &amp; \beta_1^2\frac{\gamma -1}{\beta} &amp; \beta_1 \beta_2 \frac{\gamma -1}{\beta}&amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}\ -\beta_2\gamma &amp; \beta_1\beta_2 \frac{\gamma -1}{\beta}&amp; \beta_2^2 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta}\\ -\beta_3 \gamma &amp; \beta_1\beta_3 \frac{\gamma -1}{\beta}&amp; \beta_2 \beta_3 \frac{\gamma -1}{\beta} &amp; \beta_3^2\frac{\gamma -1}{\beta} \end{pmatrix}   +I\\
 &amp;=	   \begin{pmatrix} \gamma -1 + 1 &amp; -\gamma \beta_1 &amp; -\gamma_2 \beta_2&amp; -\gamma \beta_3 \\ \gamma \beta_1 &amp; 1+ (\gamma -1)\frac{\beta_1^2}{\beta} &amp;(\gamma -1) \beta_1 \beta_2 &amp; (\gamma -1)  \frac{\beta_1\beta_3 }{\beta} \\ -\gamma \beta_2 &amp; \frac{\gamma -1}{\beta} &amp; 1+(\gamma - 1) \frac{\beta_2^2}{\beta}  &amp; \frac{\gamma -1 }{}\beta\\ -\gamma \beta_3 &amp; (\gamma -1) \frac{\beta_1\beta_3}{\beta} &amp; (\gamma -1) \frac{\beta_2 \beta_3}{\beta}  &amp; 1 + (\gamma -1) \frac{\beta_3^2}{\beta}\end{pmatrix}<br>
 .\end{align}</p>
-<p>Por lo tanto</p>
+<p>Therefore</p>
 \[
 	A=	   \begin{pmatrix} \gamma  & -\gamma \beta_1 & -\gamma_2 \beta_2& -\gamma \beta_3 \\ \gamma \beta_1 & 1+ (\gamma -1)\frac{\beta_1^2}{\beta} &(\gamma -1) \beta_1 \beta_2 & (\gamma -1)  \frac{\beta_1\beta_3 }{\beta} \\ -\gamma \beta_2 & \frac{\gamma -1}{\beta} & 1+(\gamma - 1) \frac{\beta_2^2}{\beta}  & \frac{\gamma -1 }{}\beta\\ -\gamma \beta_3 & (\gamma -1) \frac{\beta_1\beta_3}{\beta} & (\gamma -1) \frac{\beta_2 \beta_3}{\beta}  & 1 + (\gamma -1) \frac{\beta_3^2}{\beta}\end{pmatrix}   
 .\]

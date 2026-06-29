@@ -1,5 +1,5 @@
 ---
-title: "Medición de longitud de onda por difracción circular"
+title: "Wavelength Measurement by Circular Diffraction"
 report: "/reportes/reporte-fraunhofer.pdf" 
 draft: false
 date: 2025-03-10
@@ -7,4 +7,4 @@ tags: ["Instrumentation", "Image Processing", "Laser"]
 image: "/images/laser-difr.jpeg"
 readmore: false
 ---
-Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.
+An intensity analysis of photographs and their diffraction patterns was performed to estimate the wavelength of a laser.

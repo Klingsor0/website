@@ -1,16 +1,17 @@
 ---
-title: "La identidad reflectiva de la gamma por integración compleja"
+title: "The Reflection Identity of the Gamma Function via Complex Integration"
 date: 2026-02-15T23:35:59-06:00
 draft: false
-math: true 
+math: true
+tikz: true
 ---
-La reflectividad de la función gamma es: 
+The reflection identity of the gamma function is: 
 
 \begin{equation}
 		 \Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) } 
 \end{equation}
 
-Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $ 
+We can start from the definition of $\beta( 1- \alpha,  \alpha ) $ 
 
 \begin{align}
 		 \Gamma( 1- \alpha )  \Gamma(  \alpha ) &= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\\
@@ -18,7 +19,7 @@ Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $
 		 &= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I
 \end{align}
 
-donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \implies x=\infty$ y $t=\infty\implies x=\infty $. 
+where we used the substitution $t=e^x$, so $dt = e^xdx$ with limits $t=0 \implies x=-\infty$ and $t=\infty\implies x=\infty $. 
 <script type="text/tikz">
 	\begin{tikzpicture}[decoration={markings,
     mark=at position 1cm   with {\arrowreversed[line width=2pt]{stealth}},
@@ -45,7 +46,7 @@ donde usamos la sustitución $t=e^x$ entonces $dt = e^xdx$ con límites $t=0 \im
 \end{tikzpicture} 
 </script>
 
-Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértices $-R, R, R + 2\pi i , - R + 2\pi i$ :
+Now let us integrate over the rectangular contour $C_R$ with vertices $-R, R, R + 2\pi i , - R + 2\pi i$:
 
 
 \begin{align}
@@ -53,22 +54,22 @@ Ahora realicemos la integración sobre el contorno rectangular $C_R$ con vértic
 	&+ \int^{-R}\_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i ) ) dx}{1 + \exp( x + 2\pi i ) } + \int ^{0}\_{2\pi i} \frac{\exp( ( 1-\alpha ) ( -R+iy ) ) dy}{1 + \exp( -R+iy ) }
 \end{align}
 
-Evaluemos el límite de $R\to\infty$ de los integrandos que van paralelos al eje imaginario. El primero notamos que al evaluar el límite tenemos una indefinición cociente de infinitos, así que podemos usar la regla de l'Hopital
+Let us evaluate the limit $R\to\infty$ of the integrands along the sides parallel to the imaginary axis. For the first one we notice that the limit is an indeterminate form $\infty/\infty$, so we can apply L'Hôpital's rule
 
 \begin{align}
 \lim_{R \to \infty} \frac{\exp( ( 1- \alpha ) R ) \exp( ( 1- \alpha ) iy ) }{1 + \exp( R ) \exp( iy ) } &=\lim_{R \to \infty}  \frac{( 1-\alpha ) \exp( ( 1-\alpha ) R ) \exp( ( 1-\alpha ) iy ) }{\exp( R ) \exp( iy ) } \\\
 		&=\lim_{R \to \infty}  ( 1-\alpha ) \exp( -\alpha  R ) \exp(-\alpha  iy ) = 0
 \end{align}
 
-para el segundo integrando es solamente simplificar y evaluar
+for the second integrand it is only a matter of simplification
 
 \begin{align}
 		\lim_{R \to \infty} \frac{\exp( ( \alpha -1 ) R ) \exp( ( 1- \alpha ) iy ) }{1 + \exp( -R ) \exp( iy ) } &=  \frac{\lim_{R \to \infty} \exp( ( \alpha -1) R ) \exp( ( 1-\alpha ) iy ) }{\lim_{R \to \infty}  1 +\exp( -R ) \exp( iy ) } \\\
 		&=\lim_{R \to \infty}  \exp( \alpha  R ) \exp(-\alpha  iy ) = 0
 \end{align}
 
-resulta igualmente en cero dado que suponemos  $\alpha-1<0$. 
-De modo tal que cuando evaluamos el límite en la intrgral de contorno tenemos
+which also vanishes since we assume $\alpha-1<0$.
+So when we take the limit in the contour integral we get
 
 \begin{align}
 		\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &= \lim_{R \to \infty} \left\lbrace \int^R_{-R} \frac{\exp( ( 1- \alpha ) x ) dx}{1 + e^x} + \int^{-R} \_{R} \frac{\exp( ( 1- \alpha ) ( x+2\pi i )  ) dx}{1 + \exp( x + 2\pi  i) } \right\rbrace  \\\
@@ -77,13 +78,13 @@ De modo tal que cuando evaluamos el límite en la intrgral de contorno tenemos
 &= [ 1 - \exp( ( 1-  \alpha )2\pi i  )  ] I 
 \end{align}
 
-con esta igualdad podemos evaluar el contorno con el teorema del residuo
+with this equality we can evaluate the contour using the residue theorem
 
 \begin{align}
 		\lim_{R \to \infty} \oint \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } &=  2\pi i\sum_k \text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , z_k \right) 
 \end{align}
 
-que es fácil ver que solamente hay un polo simple $z_0$ dentro del contorno dado por $1 + \exp( z )= 0  \implies z_0= i\pi$, evaluemos su residuo con l'Hopital
+It is easy to see there is only one simple pole $z_0$ inside the contour, given by $1 + \exp( z )= 0  \implies z_0= i\pi$. We evaluate its residue with L'Hôpital's rule
 
 \begin{align}
 		\text{Res}\left(  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } , i\pi \right) &=  \lim_{z \to i \pi} ( z-i\pi )  \frac{\exp( ( 1- \alpha ) z ) }{1 + \exp( z ) } \\\
@@ -91,7 +92,7 @@ que es fácil ver que solamente hay un polo simple $z_0$ dentro del contorno dad
 		&= \frac{e ^{i\pi} e ^{-\alpha \pi i}}{e^{i\pi}} = e ^{- \alpha \pi i}.
 \end{align}
 
-Así podemos despejar la integral de interes $I$  como
+We can now solve for the integral of interest $I$
 
 \begin{align}
 		I &= \frac{ 2\pi i e ^{- \alpha \pi i}}{1- e ^{2\pi i} e^{- \alpha \pi i}} = \pi \frac{2i }{e ^{ \alpha \pi i} - e ^{- \alpha \pi i}} \\\

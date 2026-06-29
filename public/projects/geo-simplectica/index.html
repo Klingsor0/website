@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme="light">
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35309&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -13,22 +13,19 @@
 <meta name="author" content="">
 
 
-<meta property="og:title" content="Geometría Simplectica en Mecánica Clásica-Edgar Ivan Hinojosa">
+<meta property="og:title" content="Symplectic Geometry in Classical Mechanics-Edgar Ivan Hinojosa">
 <meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://edgarivanhinojosa.xyz/projects/geo-simplectica/">
+<meta property="og:url" content="http://localhost:35309/projects/geo-simplectica/">
 <meta property="article:published_time" content="2024-10-10T00:00:00Z"><meta property="article:modified_time" content="2024-10-10T00:00:00Z">
-<link rel="canonical" href="https://edgarivanhinojosa.xyz/projects/geo-simplectica/">
+<link rel="canonical" href="http://localhost:35309/projects/geo-simplectica/">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Geometría Simplectica en Mecánica Clásica - Edgar Ivan Hinojosa</title>
-<meta name="description" content="Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica
-clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-
-sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en
-mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.">
+<title>Symplectic Geometry in Classical Mechanics - Edgar Ivan Hinojosa</title>
+<meta name="description" content="We investigate the rich structural properties of phase space on which classical mechanics rests. Before doing so, we briefly review the mathematical results that will be used in developing more important findings. We physically motivate the proposal of the symplectic structure in classical mechanics. Finally, we present an example of solving a problem using these tools.">
 
-<link rel="stylesheet" href="/css/main.min.84ff5a518438e5c166e3d50eef13ee0416e3f10fa282943e992dc5fe401e86f4.css">
+<link rel="stylesheet" href="/css/main.min.3a71c358b5ab7df65587475741b83b02aeb1767e58d6bd046175212f7702febb.css">
 
 <script>
   window.themeCSS = {"dark":"/css/dark.min.2d79a54765b770dec1586721c635024eb7d43e87497649c87d825906f2b7cb77.css","light":"/css/light.min.ecb3fdb930acd6bf351d37e338d0b119cdd983c315bcbeb7191c083b548868b7.css"};
@@ -66,7 +63,7 @@ mecánica clásica. Para terminar daremos un ejemplo de la resolución de un 
 <meta name="msapplication-TileColor" content="#F5F0E8">
 <meta name="msapplication-config" content="/browserconfig.xml">
 
-<meta property="og:image" content="https://edgarivanhinojosa.xyz/images/plot-eB.jpeg">
+<meta property="og:image" content="http://localhost:35309/images/plot-eB.jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Edgar Ivan Hinojosa">
@@ -74,11 +71,15 @@ mecánica clásica. Para terminar daremos un ejemplo de la resolución de un 
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://edgarivanhinojosa.xyz/images/plot-eB.jpeg"><script>
+<meta name="twitter:image" content="http://localhost:35309/images/plot-eB.jpeg"><script>
   MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>
@@ -107,7 +108,7 @@ mecánica clásica. Para terminar daremos un ejemplo de la resolución de un 
     <div class="container"><header>
     <div class="site-header">
         <div class="logo">
-            <a href="https://edgarivanhinojosa.xyz/" aria-label="Edgar Ivan Hinojosa">
+            <a href="http://localhost:35309/" aria-label="Edgar Ivan Hinojosa">
                 <span class="site-title-text"><span style="color: #f5a547">Edgar</span> <span style="color: #f6be33">Ivan</span> <span style="color: #a2c292">Hinojosa</span></span>
             </a>
         </div>
@@ -160,7 +161,7 @@ mecánica clásica. Para terminar daremos un ejemplo de la resolución de un 
             
 <article class="content">
     <header>
-        <h1>Geometría Simplectica en Mecánica Clásica</h1>
+        <h1>Symplectic Geometry in Classical Mechanics</h1>
 			
 				<time datetime="2024-10-10">October 10, 2024</time>
 				<div class="article-tags tags">
@@ -176,14 +177,11 @@ mecánica clásica. Para terminar daremos un ejemplo de la resolución de un 
 	
 
     
-    <img src="/images/plot-eB.jpeg" alt="Decorative poster image for Geometría Simplectica en Mecánica Clásica" class="post-hero-image">
+    <img src="/images/plot-eB.jpeg" alt="Decorative poster image for Symplectic Geometry in Classical Mechanics" class="post-hero-image">
     
 
     <div class="article-content">
-        <p>Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica
-clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-
-sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en
-mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.</p>
+        <p>We investigate the rich structural properties of phase space on which classical mechanics rests. Before doing so, we briefly review the mathematical results that will be used in developing more important findings. We physically motivate the proposal of the symplectic structure in classical mechanics. Finally, we present an example of solving a problem using these tools.</p>
 
     </div>
 

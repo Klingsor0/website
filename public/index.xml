@@ -1,10 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:source="http://source.scripting.com/">
   <channel>
     <title>Edgar Ivan Hinojosa</title>
-    <link>http://localhost:35309/</link>
+    <link>https://edgarivanhinojosa.xyz/</link>
     <description>Recent contentonEdgar Ivan Hinojosa</description>
     <generator>Hugo -- gohugo.io</generator><language>en-us</language>
     <managingEditor>D'Arcy Norman</managingEditor>
     <webMaster>D'Arcy Norman</webMaster><lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate><source:blogroll>https://darcynorman.net/blogroll.opml</source:blogroll>
-    <source:subscriptionlist>https://darcynorman.net/blogroll.opml</source:subscriptionlist><atom:link href="http://localhost:35309/index.xml" rel="self" type="application/rss+xml" /></channel>
+    <source:subscriptionlist>https://darcynorman.net/blogroll.opml</source:subscriptionlist><atom:link href="https://edgarivanhinojosa.xyz/index.xml" rel="self" type="application/rss+xml" /></channel>
 </rss>

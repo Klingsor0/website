@@ -35,7 +35,7 @@ u^T g v = (\overline{g}(u), v)
 Esto nos da la siguiente propiedad
 \begin{equation}">
 
-<link rel="stylesheet" href="/css/main.min.84ff5a518438e5c166e3d50eef13ee0416e3f10fa282943e992dc5fe401e86f4.css">
+<link rel="stylesheet" href="/css/main.min.3a71c358b5ab7df65587475741b83b02aeb1767e58d6bd046175212f7702febb.css">
 
 <script>
   window.themeCSS = {"dark":"/css/dark.min.2d79a54765b770dec1586721c635024eb7d43e87497649c87d825906f2b7cb77.css","light":"/css/light.min.ecb3fdb930acd6bf351d37e338d0b119cdd983c315bcbeb7191c083b548868b7.css"};
@@ -84,8 +84,12 @@ Esto nos da la siguiente propiedad
 <meta name="twitter:image" content="http://localhost:35309/og-image.png"><script>
   MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>
@@ -255,10 +259,6 @@ $$det (gL^T) = det(-gL)$$$$\implies det(L) = - det(L) \implies det(L) =0$$\[
      data-api-url="/comments/api.php"
      data-page-url="/lorentz-transform/">
 </div>
-  <link rel="stylesheet" href="/comments/comments.css">
-
-  
-  <script src="/comments/comments.js"></script>
 		
 
 	</div>

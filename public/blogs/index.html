@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" data-theme="light">
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=35309&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -13,18 +13,18 @@
 <meta name="author" content="">
 
 
-<meta property="og:title" content="Blogs-Edgar Ivan Hinojosa">
+<meta property="og:title" content="Blog Posts-Edgar Ivan Hinojosa">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://edgarivanhinojosa.xyz/blogs/">
-<link rel="canonical" href="https://edgarivanhinojosa.xyz/blogs/">
+<meta property="og:url" content="http://localhost:35309/blogs/">
+<link rel="canonical" href="http://localhost:35309/blogs/">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://edgarivanhinojosa.xyz/blogs/index.xml" title="Edgar Ivan Hinojosa"><meta charset="utf-8">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:35309/blogs/index.xml" title="Edgar Ivan Hinojosa"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blogs - Edgar Ivan Hinojosa</title>
+<title>Blog Posts - Edgar Ivan Hinojosa</title>
 <meta name="description" content="">
 
-<link rel="stylesheet" href="/css/main.min.84ff5a518438e5c166e3d50eef13ee0416e3f10fa282943e992dc5fe401e86f4.css">
+<link rel="stylesheet" href="/css/main.min.3a71c358b5ab7df65587475741b83b02aeb1767e58d6bd046175212f7702febb.css">
 
 <script>
   window.themeCSS = {"dark":"/css/dark.min.2d79a54765b770dec1586721c635024eb7d43e87497649c87d825906f2b7cb77.css","light":"/css/light.min.ecb3fdb930acd6bf351d37e338d0b119cdd983c315bcbeb7191c083b548868b7.css"};
@@ -62,7 +62,7 @@
 <meta name="msapplication-TileColor" content="#F5F0E8">
 <meta name="msapplication-config" content="/browserconfig.xml">
 
-<meta property="og:image" content="https://edgarivanhinojosa.xyz/og-image.png">
+<meta property="og:image" content="http://localhost:35309/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Edgar Ivan Hinojosa">
@@ -70,11 +70,15 @@
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://edgarivanhinojosa.xyz/og-image.png"><link rel="alternate" type="application/rss+xml" href="https://edgarivanhinojosa.xyz/blogs/index.xml" title="Edgar Ivan Hinojosa" /><script>
+<meta name="twitter:image" content="http://localhost:35309/og-image.png"><link rel="alternate" type="application/rss+xml" href="http://localhost:35309/blogs/index.xml" title="Edgar Ivan Hinojosa" /><script>
   MathJax = {
     tex: {
-      inlineMath: [['\\(', '\\)']],
-      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
   };
 </script>
@@ -103,7 +107,7 @@
     <div class="container"><header>
     <div class="site-header">
         <div class="logo">
-            <a href="https://edgarivanhinojosa.xyz/" aria-label="Edgar Ivan Hinojosa">
+            <a href="http://localhost:35309/" aria-label="Edgar Ivan Hinojosa">
                 <span class="site-title-text"><span style="color: #f5a547">Edgar</span> <span style="color: #f6be33">Ivan</span> <span style="color: #a2c292">Hinojosa</span></span>
             </a>
         </div>
@@ -155,19 +159,19 @@
 </header><main id="main-content">
             
 <div class="posts-list-container">
-    <h1>Blogs</h1>
+    <h1>Blog Posts</h1>
     
     
     <article class="blog-post-preview">
         <h2 style="font-weight: normal">
-            <a href="/blogs/gamma-identidad/" style="color: var(--nav-color-0)">La identidad reflectiva de la gamma por integración compleja</a>
+            <a href="/blogs/gamma-identidad/" style="color: var(--nav-color-0)">The Reflection Identity of the Gamma Function via Complex Integration</a>
         </h2>
         <time class="post-date">February 15, 2026</time>
-        <div class="post-summary"><p>La reflectividad de la función gamma es:</p>
+        <div class="post-summary"><p>The reflection identity of the gamma function is:</p>
 <p>\begin{equation}
 \Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }
 \end{equation}</p>
-<p>Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $</p>
+<p>We can start from the definition of $\beta( 1- \alpha,  \alpha ) $</p>
 <p>\begin{align}
 \Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\
 &amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\
@@ -177,13 +181,13 @@
     
     <article class="blog-post-preview">
         <h2 style="font-weight: normal">
-            <a href="/blogs/lorentz-transform/" style="color: var(--nav-color-1)">Transformada de Lorentz general por generadores de grupo</a>
+            <a href="/blogs/lorentz-transform/" style="color: var(--nav-color-1)">General Lorentz Transformation via Group Generators</a>
         </h2>
         <time class="post-date">February 12, 2026</time>
-        <div class="post-summary"><p>En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.
-Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.
-Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.
-Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.</p></div>
+        <div class="post-summary"><p>In this post we derive the functional form of a generic Lorentz transformation from its group generators.
+At first glance I considered this trivial, as I was unaware of the role played by their non-commutativity — which made it an interesting exercise to present.
+We follow Chapter 11 of Jackson (Third Edition), which makes use of the mathematical properties of Minkowski spacetime.
+Clarifications missing from the book are supplied with original arguments.</p></div>
     </article>
     
 </div>

@@ -8,22 +8,22 @@
     <loc>http://localhost:35309/blogs/gamma-identidad/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/lorentz-transform/</loc>
+    <loc>http://localhost:35309/writings/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/blogs/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/writings/lorentz-transform/</loc>
+    <loc>http://localhost:35309/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/writings/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/blogs/</loc>
+    <loc>http://localhost:35309/about/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/about/</loc>
+    <loc>http://localhost:35309/blogs/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/tags/image-processing/</loc>
@@ -53,10 +53,10 @@
     <loc>http://localhost:35309/tags/fractional-calculus/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/instrumentation/</loc>
+    <loc>http://localhost:35309/projects/gelatina-fraccional/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/gelatina-fraccional/</loc>
+    <loc>http://localhost:35309/tags/instrumentation/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/tags/high-precision-sensors/</loc>
@@ -71,13 +71,13 @@
     <loc>http://localhost:35309/projects/fraunhoffer/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/geo-simplectica/</loc>
-    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:35309/tags/mathematical-physics/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/tags/symplectic-geometry/</loc>
+    <lastmod>2024-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:35309/projects/geo-simplectica/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:35309/projects/termo-bidim/</loc>
