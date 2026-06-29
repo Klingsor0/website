@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heat Transfer on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:1313/tags/heat-transfer/</link>
+    <link>http://localhost:35309/tags/heat-transfer/</link>
     <description>Recent content in Heat Transfer on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/heat-transfer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35309/tags/heat-transfer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
-      <link>http://localhost:1313/projects/termo-bidim/</link>
+      <link>http://localhost:35309/projects/termo-bidim/</link>
       <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/termo-bidim/</guid>
+      <guid>http://localhost:35309/projects/termo-bidim/</guid>
       <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
     </item>
   </channel>

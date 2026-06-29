@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>High Precision Sensors on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:1313/tags/high-precision-sensors/</link>
+    <link>http://localhost:35309/tags/high-precision-sensors/</link>
     <description>Recent content in High Precision Sensors on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/high-precision-sensors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35309/tags/high-precision-sensors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Measuring Hall Effect in Bismuth</title>
-      <link>http://localhost:1313/projects/hall/</link>
+      <link>http://localhost:35309/projects/hall/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/hall/</guid>
+      <guid>http://localhost:35309/projects/hall/</guid>
       <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;</description>
     </item>
   </channel>
