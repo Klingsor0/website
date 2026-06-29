@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fractional Calculus on Edgar Ivan Hinojosa</title>
-    <link>https://edgarivanhinojosa.xyz/tags/fractional-calculus/</link>
+    <link>http://localhost:35309/tags/fractional-calculus/</link>
     <description>Recent content in Fractional Calculus on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://edgarivanhinojosa.xyz/tags/fractional-calculus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35309/tags/fractional-calculus/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
-      <link>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</link>
+      <title>Fractional Model of Gelatin Viscoelasticity</title>
+      <link>http://localhost:35309/projects/gelatina-fraccional/</link>
       <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://edgarivanhinojosa.xyz/projects/gelatina-fraccional/</guid>
-      <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
+      <guid>http://localhost:35309/projects/gelatina-fraccional/</guid>
+      <description>&lt;p&gt;We experimentally test a fractional calculus model with minimal instrumentation, using simple rheological methods.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
