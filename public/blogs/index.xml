@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:35309/blogs/</link>
-    <description>Recent content in Blogs on Edgar Ivan Hinojosa</description>
+    <title>Blog Posts on Edgar Ivan Hinojosa</title>
+    <link>http://localhost:1313/blogs/</link>
+    <description>Recent content in Blog Posts on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate>
-    <atom:link href="http://localhost:35309/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>La identidad reflectiva de la gamma por integración compleja</title>
-      <link>http://localhost:35309/blogs/gamma-identidad/</link>
+      <title>The Reflection Identity of the Gamma Function via Complex Integration</title>
+      <link>http://localhost:1313/blogs/gamma-identidad/</link>
       <pubDate>Sun, 15 Feb 2026 23:35:59 -0600</pubDate>
-      <guid>http://localhost:35309/blogs/gamma-identidad/</guid>
-      <description>&lt;p&gt;La reflectividad de la función gamma es:&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}&#xA;\Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }&#xA;\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\&#xA;&amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\&#xA;&amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I&#xA;\end{align}&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blogs/gamma-identidad/</guid>
+      <description>&lt;p&gt;The reflection identity of the gamma function is:&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}&#xA;\Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }&#xA;\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;We can start from the definition of $\beta( 1- \alpha,  \alpha ) $&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\&#xA;&amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\&#xA;&amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I&#xA;\end{align}&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Transformada de Lorentz general por generadores de grupo</title>
-      <link>http://localhost:35309/blogs/lorentz-transform/</link>
+      <title>General Lorentz Transformation via Group Generators</title>
+      <link>http://localhost:1313/blogs/lorentz-transform/</link>
       <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      <guid>http://localhost:35309/blogs/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.&#xA;Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.&#xA;Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blogs/lorentz-transform/</guid>
+      <description>&lt;p&gt;In this post we derive the functional form of a generic Lorentz transformation from its group generators.&#xA;At first glance I considered this trivial, as I was unaware of the role played by their non-commutativity — which made it an interesting exercise to present.&#xA;We follow Chapter 11 of Jackson (Third Edition), which makes use of the mathematical properties of Minkowski spacetime.&#xA;Clarifications missing from the book are supplied with original arguments.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

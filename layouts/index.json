@@ -1,0 +1,14 @@
+{{- $pages := where site.RegularPages "Draft" "!=" true -}}
+[
+{{- range $i, $p := $pages -}}
+  {{- if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "url": {{ $p.Permalink | jsonify }},
+    "content": {{ $p.Plain | jsonify }},
+    "summary": {{ $p.Summary | jsonify }},
+    "date": {{ $p.Date.Format "2006-01-02" | jsonify }},
+    "section": {{ $p.Section | jsonify }}
+  }
+{{- end }}
+]

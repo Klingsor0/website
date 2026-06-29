@@ -1,7 +1,7 @@
 baseURL = "https://edgarivanhinojosa.xyz"
 languageCode = 'en-us'
 title = 'Edgar Ivan Hinojosa'
-theme = 'drishtikon'
+theme = 'typeset'
 relativeURLs = false
 
 [markup]
@@ -90,17 +90,77 @@ items = ["Python", "R", "Bash", "Fortran"]
 category = "Frameworks & Tools"
 items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCAD", "Onshape"]
 
+[[params.socialIcons]]
+  name = "GitHub"
+  url = "https://github.com/klingsor0"
+
+[[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/edgar-ivan-hinojosa-saldaña-95273b260"
+
+[[params.socialIcons]]
+  name = "Email"
+  url = "mailto:e_e.ivan.h_hs@outlook.com"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
 [menu]
     [[menu.main]]
-        name = "blogs"
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "#"
+        weight = 2
+
+    [[menu.main]]
+        name = "About Me"
+        url = "/about/"
+        parent = "about"
+        weight = 1
+
+    [[menu.main]]
+        name = "CV"
+        url = "/cv/"
+        parent = "about"
+        weight = 2
+
+    [[menu.main]]
+        name = "Extended CV"
+        url = "/extended-cv/"
+        parent = "about"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "sections"
+        name = "Sections"
+        url = "#"
+        weight = 3
+
+    [[menu.main]]
+        name = "Blog Posts"
         url = "/blogs/"
-        weight = 10
+        parent = "sections"
+        weight = 1
+
     [[menu.main]]
-        name = "projects"
-        url = "/projects/"
-        weight = 20
+        name = "Notes"
+        url = "/writings/"
+        parent = "sections"
+        weight = 2
+
     [[menu.main]]
-        name = "research"
+        name = "Research"
         url = "/research/"
-        weight = 30
+        parent = "sections"
+        weight = 3
+
+    [[menu.main]]
+        name = "Search"
+        url = "/search/"
+        weight = 4
 

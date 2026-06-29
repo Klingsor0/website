@@ -1,5 +1,5 @@
 ---
-title: "Geometría Simplectica en Mecánica Clásica"
+title: "Symplectic Geometry in Classical Mechanics"
 report: "/reportes/Manuscrito-formato.pdf" 
 draft: false
 image: "/images/plot-eB.jpeg"
@@ -7,7 +7,4 @@ date: 2024-10-10
 tags: ["Symplectic Geometry", "Mathematical Physics"]
 readmore: false
 ---
-Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica
-clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-
-sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en
-mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.
+We investigate the rich structural properties of phase space on which classical mechanics rests. Before doing so, we briefly review the mathematical results that will be used in developing more important findings. We physically motivate the proposal of the symplectic structure in classical mechanics. Finally, we present an example of solving a problem using these tools.

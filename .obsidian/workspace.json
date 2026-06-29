@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "9a55e68b64b8a926",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b40109c9333c541",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f20f47c9b552394f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/blogs/gamma-identidad.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "gamma-identidad"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b27a7dbff7ed4e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e02c9d953840d63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ee74c7eeaf44b44c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "4f8c7a651a235d0d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "a1157777e95d6a8b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "36fda3bc203cc340",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb3eaa464195ffc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0db03344d34835c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/blogs/gamma-identidad.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de gamma-identidad"
+            }
+          },
+          {
+            "id": "0243ba9ef44e9ef7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/blogs/gamma-identidad.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de gamma-identidad"
+            }
+          },
+          {
+            "id": "bf878ad5a7c297ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "009e44a2ead10bb2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "f5fb962f963d230c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/blogs/gamma-identidad.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de gamma-identidad"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "f20f47c9b552394f",
+  "lastOpenFiles": [
+    "test-palette.colors",
+    "static/cv/pp.jpeg",
+    "static/cv/CV-extendido.tex",
+    "notes/color-system.md",
+    "notes",
+    "layouts/partials/nav.html",
+    "layouts/page/search.html",
+    "layouts/page",
+    "layouts/index.json",
+    "layouts/index.html",
+    "content/search.md",
+    "content/research/_index.md",
+    "content/research",
+    "content/extended-cv.md",
+    "content/cv.md",
+    "content/_index.md",
+    "content/blogs/gamma-identidad.md.tmp.1128940.cc618289b16b",
+    "content/blogs/lorentz-transform.md",
+    "content/profile-pic.jpeg",
+    "public/cv/pp.jpeg"
+  ]
+}

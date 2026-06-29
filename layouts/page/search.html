@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="search-container">
+    <h1>{{ .Title }}</h1>
+    <div class="search-form">
+        <input type="text" id="search-input" placeholder="Search..." autocomplete="off" autofocus>
+    </div>
+    <div id="search-stats" class="search-stats"></div>
+    <div id="search-results"></div>
+</div>
+
+<script>
+    let searchData = [];
+
+    fetch('{{ .Site.BaseURL }}index.json')
+        .then(r => r.json())
+        .then(data => {
+            searchData = data;
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get('q');
+            if (q) {
+                document.getElementById('search-input').value = q;
+                runSearch(q);
+            }
+        });
+
+    document.getElementById('search-input').addEventListener('input', function () {
+        const q = this.value.trim();
+        const url = q ? '?q=' + encodeURIComponent(q) : window.location.pathname;
+        window.history.replaceState({}, '', url);
+        runSearch(q);
+    });
+
+    function runSearch(query) {
+        const results = document.getElementById('search-results');
+        const stats = document.getElementById('search-stats');
+
+        if (query.length < 2) {
+            results.innerHTML = '';
+            stats.innerHTML = '';
+            return;
+        }
+
+        const q = query.toLowerCase();
+        const matches = searchData.filter(p =>
+            (p.title && p.title.toLowerCase().includes(q)) ||
+            (p.content && p.content.toLowerCase().includes(q)) ||
+            (p.summary && p.summary.toLowerCase().includes(q))
+        );
+
+        stats.innerHTML = matches.length
+            ? `${matches.length} result${matches.length > 1 ? 's' : ''} for "<strong>${query}</strong>"`
+            : '';
+
+        if (matches.length === 0) {
+            results.innerHTML = '<div class="no-results">No results found.</div>';
+            return;
+        }
+
+        results.innerHTML = matches.map(p => `
+            <div class="search-result">
+                <div class="result-title"><a href="${p.url}">${p.title}</a></div>
+                <div class="result-meta">${p.section ? p.section + ' &bull; ' : ''}${p.date}</div>
+                <div class="result-summary">${p.summary || ''}</div>
+            </div>
+        `).join('');
+    }
+</script>
+
+<style>
+    .search-container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    .search-form { margin-bottom: 24px; }
+    #search-input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid var(--border-colour);
+        border-radius: 4px;
+        background-color: var(--bg-colour);
+        color: var(--text-colour);
+        box-sizing: border-box;
+    }
+    .search-stats { color: var(--text-colour-light); font-size: 14px; margin-bottom: 16px; }
+    .search-result { border-bottom: 1px solid var(--border-colour); padding: 18px 0; }
+    .search-result:last-child { border-bottom: none; }
+    .result-title { font-size: 18px; margin-bottom: 4px; }
+    .result-title a { color: var(--link-colour); text-decoration: none; }
+    .result-title a:hover { text-decoration: underline; }
+    .result-meta { color: var(--text-colour-light); font-size: 13px; margin-bottom: 6px; }
+    .result-summary { color: var(--text-colour); line-height: 1.5; font-size: 14px; }
+    .no-results { text-align: center; padding: 40px; color: var(--text-colour-light); }
+</style>
+{{ end }}

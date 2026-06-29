@@ -1,5 +1,5 @@
 ---
-title: "Una deducción con algebras de Lie de una transformación de Lorentz"
+title: "A Lie Algebra Derivation of the Lorentz Transformation"
 date: 2026-02-12T15:52:52-06:00
 draft: false
 category: projects

@@ -2,89 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:35309/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/blogs/gamma-identidad/</loc>
+    <loc>http://localhost:1313/blogs/gamma-identidad/</loc>
     <lastmod>2026-02-15T23:35:59-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/lorentz-transform/</loc>
+    <loc>http://localhost:1313/writings/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/blogs/lorentz-transform/</loc>
+    <loc>http://localhost:1313/blogs/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/writings/lorentz-transform/</loc>
+    <loc>http://localhost:1313/lorentz-transform/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/writings/</loc>
+    <loc>http://localhost:1313/writings/</loc>
     <lastmod>2026-02-12T15:52:52-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/blogs/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/about/</loc>
+    <loc>http://localhost:1313/blogs/</loc>
     <lastmod>2026-01-28T22:19:34-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/image-processing/</loc>
+    <loc>http://localhost:1313/tags/image-processing/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/proto1/</loc>
+    <loc>http://localhost:1313/projects/proto1/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/lasers/</loc>
+    <loc>http://localhost:1313/tags/lasers/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/python/</loc>
+    <loc>http://localhost:1313/tags/python/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/experimental-physics/</loc>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/experimental-physics/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/fractional-calculus/</loc>
+    <loc>http://localhost:1313/tags/fractional-calculus/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/instrumentation/</loc>
+    <loc>http://localhost:1313/projects/gelatina-fraccional/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/gelatina-fraccional/</loc>
+    <loc>http://localhost:1313/tags/instrumentation/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/high-precision-sensors/</loc>
+    <loc>http://localhost:1313/tags/high-precision-sensors/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/hall/</loc>
+    <loc>http://localhost:1313/projects/hall/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/laser/</loc>
+    <loc>http://localhost:1313/tags/laser/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/fraunhoffer/</loc>
+    <loc>http://localhost:1313/projects/fraunhoffer/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/geo-simplectica/</loc>
+    <loc>http://localhost:1313/tags/mathematical-physics/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/mathematical-physics/</loc>
+    <loc>http://localhost:1313/tags/symplectic-geometry/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/symplectic-geometry/</loc>
+    <loc>http://localhost:1313/projects/geo-simplectica/</loc>
     <lastmod>2024-10-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/projects/termo-bidim/</loc>
+    <loc>http://localhost:1313/projects/termo-bidim/</loc>
     <lastmod>2023-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/tags/heat-transfer/</loc>
+    <loc>http://localhost:1313/tags/heat-transfer/</loc>
     <lastmod>2023-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:35309/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:35309/writings/proto2/</loc>
+    <loc>http://localhost:1313/cv/</loc>
+  </url><url>
+    <loc>http://localhost:1313/extended-cv/</loc>
+  </url><url>
+    <loc>http://localhost:1313/writings/proto2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>

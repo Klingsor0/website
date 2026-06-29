@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Laser on Edgar Ivan Hinojosa</title>
-    <link>http://localhost:35309/tags/laser/</link>
+    <link>http://localhost:1313/tags/laser/</link>
     <description>Recent content in Laser on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:35309/tags/laser/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/laser/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Medición de longitud de onda por difracción circular</title>
-      <link>http://localhost:35309/projects/fraunhoffer/</link>
+      <title>Wavelength Measurement by Circular Diffraction</title>
+      <link>http://localhost:1313/projects/fraunhoffer/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/fraunhoffer/</guid>
-      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/projects/fraunhoffer/</guid>
+      <description>&lt;p&gt;An intensity analysis of photographs and their diffraction patterns was performed to estimate the wavelength of a laser.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

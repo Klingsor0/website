@@ -1,89 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:source="http://source.scripting.com/">
   <channel>
     <title>Edgar Ivan Hinojosa</title>
-    <link>http://localhost:35309/</link>
-    <description>Recent content on Edgar Ivan Hinojosa</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate>
-    <atom:link href="http://localhost:35309/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>La identidad reflectiva de la gamma por integración compleja</title>
-      <link>http://localhost:35309/blogs/gamma-identidad/</link>
-      <pubDate>Sun, 15 Feb 2026 23:35:59 -0600</pubDate>
-      <guid>http://localhost:35309/blogs/gamma-identidad/</guid>
-      <description>&lt;p&gt;La reflectividad de la función gamma es:&lt;/p&gt;&#xA;&lt;p&gt;\begin{equation}&#xA;\Gamma( z )  \Gamma( 1-z )  = \frac{\pi}{\sin( \pi z ) }&#xA;\end{equation}&lt;/p&gt;&#xA;&lt;p&gt;Podemos partir desde la definición de la $\beta( 1- \alpha,  \alpha ) $&lt;/p&gt;&#xA;&lt;p&gt;\begin{align}&#xA;\Gamma( 1- \alpha )  \Gamma(  \alpha ) &amp;amp;= \beta (  1- \alpha,  \alpha ) = \int^\infty_0 \frac{t ^{1- \alpha-1}dt}{( 1+ t  )^{1- \alpha+ \alpha} } \\&#xA;&amp;amp;= \int^\infty_0 \frac{t ^{-\alpha} dt}{1 + t} \\&#xA;&amp;amp;= \int^\infty_{-\infty} \frac{e ^{-\alpha x} e^x dx}{1+ e^x} = \int^\infty_{-\infty} \frac{e ^{( 1-\alpha )x }}{ 1 + e^{x}} = I&#xA;\end{align}&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>La forma de una transformada de Lorentz general por generadores</title>
-      <link>http://localhost:35309/lorentz-transform/</link>
-      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      <guid>http://localhost:35309/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;$$Ax =x&#39;$$$$&#xA;\overline{g}(e_i) = e^i \forall i \neq 0&#xA;$$$$\overline{g}(e_0) = - e^0$$\[&#xA;u^T g v = (\overline{g}(u), v)&#xA;.\]$$g = \begin{pmatrix} -1 &amp; &amp; &amp; \\ &amp; 1 &amp; &amp; \\ &amp; &amp; 1 &amp; \\ &amp; &amp; &amp; 1 \end{pmatrix} $$$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$$$a_{ij} g_{jl} a_{lk} = g_{ik}$$$$A = e^L$$$$det(A) = e^{trL} =1 \implies trL =0 $$$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$\[&#xA;&#x9;&#x9;A^T= e^{L^T} \implies gA^Tg = e^{g L^Tg} \implies g^2 A^{-1} g^2 = A^{-1}= e^{g L^T g} \implies e^{-L} = e^{g L^T g}&#xA;.\]&lt;p&gt;&#xA;Esto nos da la siguiente propiedad&#xA;\begin{equation}&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Transformada de Lorentz general por generadores de grupo</title>
-      <link>http://localhost:35309/blogs/lorentz-transform/</link>
-      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      <guid>http://localhost:35309/blogs/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente blog deduciremos la forma funcional de una transformación de Lorentz genérica a partir de los generadores de grupo.&#xA;Esto a primera vista lo consideré trivial dado que no tenia conocimiento del rol que juega la no conmutatividad de los mismos, es así que se me hizo un ejercicio interesante para presentar.&#xA;Nos basaremos en el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Una deducción con algebras de Lie de una transformación de Lorentz</title>
-      <link>http://localhost:35309/writings/lorentz-transform/</link>
-      <pubDate>Thu, 12 Feb 2026 15:52:52 -0600</pubDate>
-      <guid>http://localhost:35309/writings/lorentz-transform/</guid>
-      <description>&lt;p&gt;En el presente documento daremos solución a la tarea siguiendo el capítulo 11 del Jackson Tercera Edición, el cuál hace uso de las propiedades matemáticas del espacio tiempo de Minkowski.&#xA;Se realizarán precisiones donde falten en el libro con apoyo de argumentos originales.&lt;/p&gt;&#xA;$$Ax =x&#39;$$$$\overline{g}(e_i) = e^i \forall i \neq 0$$$$\overline{g}(e_0) = - e^0$$\[&#xA;u^T g v = (\overline{g}(u), v)&#xA;.\]$$g = \begin{pmatrix} -1 &amp; &amp; &amp; \\ &amp; 1 &amp; &amp; \\ &amp; &amp; 1 &amp; \\ &amp; &amp; &amp; 1 \end{pmatrix} $$$$det(A^T g A) det(A^T) det(g) det(A)= det(g)$$$$\implies det(A^T) det(A) = det(A)^2= 1 \implies det(A) = \pm 1$$$$a_{ij} g_{jl} a_{lk} = g_{ik}$$$$A = e^L$$$$det(A) = e^{trL} =1 \implies trL =0 $$$$A^TgA A^{-1}g = g A ^{-1}g \implies A^T = gA ^{-1}g$$\[&#xA;&#x9;&#x9;A^T= e^{L^T} \implies gA^Tg = e^{g L^Tg} \implies g^2 A^{-1} g^2 = A^{-1}= e^{g L^T g} \implies e^{-L} = e^{g L^T g}&#xA;.\]&lt;p&gt;&#xA;Esto nos da la siguiente propiedad&#xA;\begin{equation}&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Laser-track</title>
-      <link>http://localhost:35309/projects/proto1/</link>
-      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/proto1/</guid>
-      <description>&lt;p&gt;Graphical interface for laser path extraction and analysis for optical experimental arragements.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Modelo Fraccional de la Viscoelásticidad de una Gelatina</title>
-      <link>http://localhost:35309/projects/gelatina-fraccional/</link>
-      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/gelatina-fraccional/</guid>
-      <description>&lt;p&gt;Ponemos a prueba experimental un modelo de calculo fraccional con instrumentación reducida, haciendo uso de métodos reologicos simples.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Measuring Hall Effect in Bismuth</title>
-      <link>http://localhost:35309/projects/hall/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/hall/</guid>
-      <description>&lt;p&gt;Medición del efecto Hall con capaz delgadas de bismuto hechas sin equipo especializado.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Medición de longitud de onda por difracción circular</title>
-      <link>http://localhost:35309/projects/fraunhoffer/</link>
-      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/fraunhoffer/</guid>
-      <description>&lt;p&gt;Se realizo un análisis de la intensidad de una fotografías y sus patrones de difracción para estimar la longitud de onda de un laser.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Geometría Simplectica en Mecánica Clásica</title>
-      <link>http://localhost:35309/projects/geo-simplectica/</link>
-      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/geo-simplectica/</guid>
-      <description>&lt;p&gt;Indagamos en las riquezas estructurales del espacio fase, sobre las cuales descansa la mecánica&#xA;clásica conocida. Antes de ello daremos un breve repaso a resultados matemáticos que utilizaremos en el de-&#xA;sarrollo de resultados más importantes. Motivaremos fı́sicamente la propuesta de la estructura simpléctica en&#xA;mecánica clásica. Para terminar daremos un ejemplo de la resolución de un problema usando estas herramientas.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conducción de Calor y Gradiente de Temperatura en dos Dimensiones</title>
-      <link>http://localhost:35309/projects/termo-bidim/</link>
-      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/projects/termo-bidim/</guid>
-      <description>&lt;p&gt;Se diseño y ejecuto un arreglo experimental con el objetivo de verificar el gradiente de temperatura bidimensional descrito por la ley de conducción de Fourier.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hola mundo</title>
-      <link>http://localhost:35309/writings/proto2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35309/writings/proto2/</guid>
-      <description>&lt;p&gt;Hola aquí pongo proyectos tal cual.&lt;/p&gt;</description>
-    </item>
-  </channel>
+    <link>http://localhost:1313/</link>
+    <description>Recent contentonEdgar Ivan Hinojosa</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language>
+    <managingEditor>D'Arcy Norman</managingEditor>
+    <webMaster>D'Arcy Norman</webMaster><lastBuildDate>Sun, 15 Feb 2026 23:35:59 -0600</lastBuildDate><source:blogroll>https://darcynorman.net/blogroll.opml</source:blogroll>
+    <source:subscriptionlist>https://darcynorman.net/blogroll.opml</source:subscriptionlist><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /></channel>
 </rss>

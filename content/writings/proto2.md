@@ -1,6 +1,6 @@
 ---
-title: "Hola mundo"
+title: "Hello World"
 draft: false
 category: projects
 ---
-Hola aquí pongo proyectos tal cual.
+Here I place projects as-is.
