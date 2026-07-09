@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Edgar Ivan Hinojosa</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathematical Physics</title>
+      <link>http://localhost:1313/tags/mathematical-physics/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mathematical-physics/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Image Processing</title>
       <link>http://localhost:1313/tags/image-processing/</link>
@@ -62,13 +69,6 @@
       <link>http://localhost:1313/tags/laser/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/laser/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mathematical Physics</title>
-      <link>http://localhost:1313/tags/mathematical-physics/</link>
-      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mathematical-physics/</guid>
       <description></description>
     </item>
     <item>

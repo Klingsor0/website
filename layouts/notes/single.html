@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article class="content">
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ if not .Params.hideMeta }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ partial "post-tags.html" . .RelPermalink }}
+        {{ end }}
+    </header>
+
+    {{ if .Params.pdf }}
+    <div style="margin: 1rem 0;">
+        <a href="{{ .Params.pdf }}" class="project-link" target="_blank">
+            <span class="icon cv-icon"></span> View PDF
+        </a>
+    </div>
+    {{ end }}
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+
+    <div class="post-footer">
+        {{ if not .Params.hideMeta }}
+        {{ if .Lastmod }}
+        <div class="page-meta">
+            <p>Last updated: {{ .Lastmod.Format "January 2, 2006" }}</p>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</article>
+{{ end }}

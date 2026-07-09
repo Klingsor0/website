@@ -1,0 +1,49 @@
+{{- define "main" -}}
+<section class="list-page main-content">
+    <header>
+        <h1>{{- .Title -}}</h1>
+    </header>
+
+    <div class="series-grid">
+        {{- range site.Menus.main -}}
+            {{- if eq .Name "Sections" -}}
+                {{- range .Children -}}
+                    {{- $page := site.GetPage .URL -}}
+                    {{- with $page -}}
+                        {{- $count := len .Pages -}}
+                        <div class="series-card">
+                            <a href="{{- .RelPermalink -}}" class="series-card-link">
+                                <div class="series-card-thumbnail">
+                                    {{- with .Params.image -}}
+                                    <img src="{{- . -}}" alt="{{- $.Title -}}">
+                                    {{- else -}}
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" aria-hidden="true" class="series-card-placeholder-svg">
+                                        <rect x="98" y="42" width="88" height="108" rx="3" fill="none" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                                        <rect x="106" y="34" width="88" height="108" rx="3" fill="none" stroke="currentColor" stroke-width="2" opacity="0.25"/>
+                                        <rect x="114" y="26" width="88" height="108" rx="3" fill="var(--bg-secondary)" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+                                        <line x1="130" y1="50" x2="186" y2="50" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                                        <line x1="130" y1="62" x2="186" y2="62" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                                        <line x1="130" y1="74" x2="170" y2="74" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                                        <line x1="130" y1="86" x2="178" y2="86" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                                        <line x1="130" y1="98" x2="162" y2="98" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                                    </svg>
+                                    {{- end -}}
+                                </div>
+                                <div class="series-card-top">
+                                    <h2 class="series-card-title">{{- .Title -}}</h2>
+                                    <span class="series-card-count">
+                                        {{- $count -}}&nbsp;{{- if eq $count 1 -}}post{{- else -}}posts{{- end -}}
+                                    </span>
+                                </div>
+                            </a>
+                            {{- with .Content -}}
+                            <div class="series-card-description section-card-description">{{- . -}}</div>
+                            {{- end -}}
+                        </div>
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+    </div>
+</section>
+{{- end -}}

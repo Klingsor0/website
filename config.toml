@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Edgar Ivan Hinojosa'
 theme = 'typeset'
 relativeURLs = false
+staticDir = ["content/attachments"]
 
 [markup]
   [markup.goldmark]
@@ -102,6 +103,10 @@ items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCA
   name = "Email"
   url = "mailto:e_e.ivan.h_hs@outlook.com"
 
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
@@ -138,7 +143,7 @@ items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCA
     [[menu.main]]
         identifier = "sections"
         name = "Sections"
-        url = "#"
+        url = "/sections/"
         weight = 3
 
     [[menu.main]]
@@ -149,7 +154,7 @@ items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCA
 
     [[menu.main]]
         name = "Notes"
-        url = "/writings/"
+        url = "/notes/"
         parent = "sections"
         weight = 2
 
@@ -160,7 +165,27 @@ items = ["OpenCV", "NumPy", "Pandas", "Mathematica", "Microcontrollers", "AutoCA
         weight = 3
 
     [[menu.main]]
+        name = "Projects"
+        url = "/projects/"
+        weight = 4
+
+    [[menu.main]]
+        name = "Photos"
+        url = "/photos/"
+        weight = 5
+
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 6
+
+    [[menu.main]]
+        name = "Archives"
+        url = "/archives/"
+        weight = 7
+
+    [[menu.main]]
         name = "Search"
         url = "/search/"
-        weight = 4
+        weight = 8
 

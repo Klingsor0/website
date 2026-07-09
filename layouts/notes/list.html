@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="posts-list-container">
+    <h1>{{ .Title }}</h1>
+
+    {{ range $i, $note := .Pages }}
+    <article class="blog-post-preview">
+        <h2 style="font-weight: normal">
+            <a href="{{ $note.RelPermalink }}" style="color: var(--nav-color-{{ mod $i 7 }})">{{ $note.Title }}</a>
+        </h2>
+        <time class="post-date">{{ $note.Date.Format "January 2, 2006" }}</time>
+        <div class="post-summary">{{ $note.Summary }}</div>
+        {{ if $note.Params.pdf }}
+        <a href="{{ $note.Params.pdf }}" class="project-link" target="_blank" style="margin-top: 0.5rem; display: inline-block;">
+            PDF
+        </a>
+        {{ end }}
+    </article>
+    {{ end }}
+</div>
+{{ end }}

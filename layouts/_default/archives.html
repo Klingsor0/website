@@ -1,0 +1,163 @@
+{{- define "main" -}}
+
+{{- $now := now -}}
+{{- $currentYear := $now.Format "2006" -}}
+{{- $prevYearInt := sub (int $currentYear) 1 -}}
+{{- $prevYear := printf "%d" $prevYearInt -}}
+{{- $currentMonth := int ($now.Format "1") -}}
+{{- $openPrevYear := le $currentMonth 3 -}}
+
+{{- $archivedPages := where site.RegularPages "PublishDate.Year" "gt" 1 -}}
+{{- $yearGroups := $archivedPages.GroupByPublishDate "2006" -}}
+
+<article class="single-content archives-page">
+
+  {{- .Content -}}
+
+  <nav class="archive-year-index" aria-label="Jump to year">
+    {{- range $yearGroups }}
+    <a href="#year-{{ .Key }}" class="archive-year-index-item" data-year="{{ .Key }}">
+      <span class="archive-year-index-year">{{ .Key }}</span>
+      <span class="archive-year-index-count">{{ len .Pages }}</span>
+    </a>
+    {{- end }}
+  </nav>
+
+  <div class="archive-filters" role="toolbar" aria-label="Filter by content type">
+    <button type="button" class="archive-filter" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="archive-filter" data-filter="blogs" aria-pressed="false"><span aria-hidden="true">📰</span> Blog posts</button>
+    <button type="button" class="archive-filter" data-filter="notes" aria-pressed="false"><span aria-hidden="true">📓</span> Notes</button>
+    <button type="button" class="archive-filter" data-filter="projects" aria-pressed="false"><span aria-hidden="true">🛠️</span> Projects</button>
+    <button type="button" class="archive-filter" data-filter="research" aria-pressed="false"><span aria-hidden="true">🔬</span> Research</button>
+    <button type="button" class="archive-filter" data-filter="photos" aria-pressed="false"><span aria-hidden="true">📸</span> Photos</button>
+  </div>
+
+  <div class="archives-list" data-filter="all">
+    {{- range $yearGroups }}
+    {{- $year := .Key -}}
+    {{- $yearPages := .Pages -}}
+    {{- $yearCount := len $yearPages -}}
+
+    {{- $yearTypes := slice -}}
+    {{- range $yearPages -}}
+      {{- $yearTypes = $yearTypes | append .Type -}}
+    {{- end -}}
+    {{- $yearTypes = uniq $yearTypes -}}
+
+    {{- $isRecent := or (eq $year $currentYear) (and $openPrevYear (eq $year $prevYear)) -}}
+    <details class="archive-year-block{{ if $isRecent }} is-recent{{ end }}" id="year-{{ $year }}" data-year="{{ $year }}" data-types="{{ delimit $yearTypes " " }}"{{ if $isRecent }} open{{ end }}>
+      <summary class="archive-year">
+        <span class="archive-year-label">{{ $year }}</span>
+        <span class="archive-year-count">{{ $yearCount }} {{ cond (eq $yearCount 1) "item" "items" }}</span>
+      </summary>
+
+      {{- range ($yearPages.GroupByPublishDate "January") }}
+      {{- $monthTypes := slice -}}
+      {{- range .Pages -}}
+        {{- $monthTypes = $monthTypes | append .Type -}}
+      {{- end -}}
+      {{- $monthTypes = uniq $monthTypes -}}
+      <div class="archive-month-block" data-types="{{ delimit $monthTypes " " }}">
+        <h3 class="archive-month">{{ .Key }}</h3>
+        <ul class="archive-list">
+          {{- range sort .Pages "PublishDate" "desc" }}
+          <li class="archive-item archive-{{ .Type }}">
+            <span class="archive-item-icon" aria-hidden="true">
+              {{- if eq .Type "blogs" -}}📰
+              {{- else if eq .Type "notes" -}}📓
+              {{- else if eq .Type "projects" -}}🛠️
+              {{- else if eq .Type "research" -}}🔬
+              {{- else if eq .Type "photos" -}}📸
+              {{- else -}}📄
+              {{- end -}}
+            </span>
+            <time class="archive-item-date" datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "Jan 2" }}</time>
+            <a class="archive-item-link" href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+      {{- end }}
+    </details>
+    {{- end }}
+  </div>
+
+  <button type="button" class="archive-back-to-top" aria-label="Back to top" hidden>
+    <span aria-hidden="true">&uarr;</span>
+    <span class="archive-back-to-top-label">Top</span>
+  </button>
+
+</article>
+
+<script>
+(function () {
+  var list = document.querySelector('.archives-list');
+  var filterBar = document.querySelector('.archive-filters');
+  var yearIndex = document.querySelector('.archive-year-index');
+  var backToTop = document.querySelector('.archive-back-to-top');
+  if (!list || !filterBar) return;
+
+  function setFilter(type) {
+    list.dataset.filter = type;
+
+    filterBar.querySelectorAll('.archive-filter').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', btn.dataset.filter === type ? 'true' : 'false');
+    });
+
+    list.querySelectorAll('.archive-year-block').forEach(function (block) {
+      if (type === 'all') {
+        block.open = block.classList.contains('is-recent');
+        return;
+      }
+      var types = (block.dataset.types || '').split(' ');
+      block.open = types.indexOf(type) !== -1;
+    });
+  }
+
+  filterBar.addEventListener('click', function (e) {
+    var btn = e.target.closest('.archive-filter');
+    if (!btn) return;
+    e.preventDefault();
+    setFilter(btn.dataset.filter);
+  });
+
+  if (yearIndex) {
+    yearIndex.addEventListener('click', function (e) {
+      var link = e.target.closest('.archive-year-index-item');
+      if (!link) return;
+      var year = link.dataset.year;
+      var block = document.getElementById('year-' + year);
+      if (block && !block.open) block.open = true;
+    });
+  }
+
+  function openHashYear() {
+    var hash = window.location.hash;
+    if (!hash) return;
+    var block = document.querySelector(hash);
+    if (block && block.classList.contains('archive-year-block') && !block.open) {
+      block.open = true;
+    }
+  }
+  window.addEventListener('hashchange', openHashYear);
+  openHashYear();
+
+  if (backToTop) {
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        backToTop.hidden = window.scrollY <= 600;
+        ticking = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+})();
+</script>
+
+{{- end -}}

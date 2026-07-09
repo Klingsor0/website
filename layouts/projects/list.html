@@ -1,61 +1,49 @@
-{{ define "main" }}
-<div class="container">
-<div class="projects-container">
-    <header class="projects-header">
-        <h1>{{ .Title }}</h1>
+{{- define "main" -}}
+<section class="list-page main-content">
+    <header>
+        <h1>{{- .Title -}}</h1>
     </header>
-    
-    <div class="projects-grid">
-        {{ range .Pages }}
-        <article class="project-card">
-            {{ if .Params.image }}
-            <div class="project-image">
-                <img src="{{ .Params.image }}" alt="{{ .Title }}">
-            </div>
-            {{ end }}
-            
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h2>
-                
-                <div class="project-meta">
-                    <time>{{ .Date.Format "2006" }}</time>
-                    {{ with .Params.tags }}
-                    <span class="project-tags">{{ delimit . ", " }}</span>
-                    {{ end }}
+
+    <div class="series-grid">
+        {{- range .Pages -}}
+        <div class="series-card">
+            <a href="{{- .RelPermalink -}}" class="series-card-link">
+                <div class="series-card-thumbnail">
+                    {{- with .Params.image -}}
+                    <img src="{{- . -}}" alt="{{- $.Title -}}">
+                    {{- else -}}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" aria-hidden="true" class="series-card-placeholder-svg">
+                        <rect x="98" y="42" width="88" height="108" rx="3" fill="none" stroke="currentColor" stroke-width="2" opacity="0.15"/>
+                        <rect x="106" y="34" width="88" height="108" rx="3" fill="none" stroke="currentColor" stroke-width="2" opacity="0.25"/>
+                        <rect x="114" y="26" width="88" height="108" rx="3" fill="var(--bg-secondary)" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+                        <line x1="130" y1="50" x2="186" y2="50" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                        <line x1="130" y1="62" x2="186" y2="62" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                        <line x1="130" y1="74" x2="170" y2="74" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                        <line x1="130" y1="86" x2="178" y2="86" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                        <line x1="130" y1="98" x2="162" y2="98" stroke="currentColor" stroke-width="2" opacity="0.35"/>
+                    </svg>
+                    {{- end -}}
                 </div>
-                
-                <p class="project-summary">{{ .Summary }}</p>
-				<div class="project-links">
-					{{ if .Params.repo }}
-					<a href="{{ .Params.repo }}" class="project-link" target="_blank">
-						<span class="icon github-icon"></span> Repository
-					</a>
-					{{ end }}
-					
-					{{ if .Params.report }}
-					<a href="{{ .Params.report }}" class="project-link" target="_blank">
-						<span class="icon cv-icon"></span> View Report
-					</a>
-					{{ end }}
-					
-					{{ if .Params.demo }}
-					<a href="{{ .Params.demo }}" class="project-link" target="_blank">
-						Live Demo
-					</a>
-					{{ end }}
-					<!-- Conditional Read More link -->
-					{{ if ne .Params.readmore false }}
-					<a href="{{ .RelPermalink }}" class="project-link">
-						Read More →
-					</a>
-					{{ end }}					
-				</div>               
+                <div class="series-card-top">
+                    <h2 class="series-card-title">{{- .Title -}}</h2>
+                    <span class="series-card-count">{{- .Date.Format "2006" -}}</span>
+                </div>
+            </a>
+            {{- with .Summary -}}
+            <div class="series-card-description">{{- . -}}</div>
+            {{- end -}}
+            {{- if or .Params.repo .Params.report -}}
+            <div class="series-card-latest">
+                {{- if .Params.repo -}}
+                <a href="{{- .Params.repo -}}" class="project-link" target="_blank">Repository</a>
+                {{- end -}}
+                {{- if .Params.report -}}
+                <a href="{{- .Params.report -}}" class="project-link" target="_blank">View Report</a>
+                {{- end -}}
             </div>
-        </article>
-        {{ end }}
+            {{- end -}}
+        </div>
+        {{- end -}}
     </div>
-</div>
-</div>
-{{ end }}
+</section>
+{{- end -}}

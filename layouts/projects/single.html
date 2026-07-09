@@ -1,0 +1,47 @@
+{{ define "main" }}
+<article class="content">
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{ if not .Params.hideMeta }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ partial "post-tags.html" . .RelPermalink }}
+        {{ end }}
+    </header>
+
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="Decorative poster image for {{ $.Title }}" class="post-hero-image">
+    {{ end }}
+
+    <div class="project-links" style="margin: 1rem 0;">
+        {{ if .Params.repo }}
+        <a href="{{ .Params.repo }}" class="project-link" target="_blank">
+            <span class="icon github-icon"></span> Repository
+        </a>
+        {{ end }}
+        {{ if .Params.report }}
+        <a href="{{ .Params.report }}" class="project-link" target="_blank">
+            <span class="icon cv-icon"></span> View Report
+        </a>
+        {{ end }}
+        {{ if .Params.demo }}
+        <a href="{{ .Params.demo }}" class="project-link" target="_blank">
+            Live Demo
+        </a>
+        {{ end }}
+    </div>
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+
+    <div class="post-footer">
+        {{ if not .Params.hideMeta }}
+        {{ if .Lastmod }}
+        <div class="page-meta">
+            <p>Last updated: {{ .Lastmod.Format "January 2, 2006" }}</p>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</article>
+{{ end }}

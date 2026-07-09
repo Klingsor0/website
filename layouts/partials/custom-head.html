@@ -14,6 +14,25 @@
   {{ end }}
 }
 </style>
+<!-- Archive filter rules for site-specific content types -->
+<style>
+.archives-list[data-filter="blogs"] .archive-item:not(.archive-blogs),
+.archives-list[data-filter="projects"] .archive-item:not(.archive-projects),
+.archives-list[data-filter="research"] .archive-item:not(.archive-research) {
+  display: none;
+}
+.archives-list[data-filter="blogs"] .archive-month-block:not([data-types~="blogs"]),
+.archives-list[data-filter="projects"] .archive-month-block:not([data-types~="projects"]),
+.archives-list[data-filter="research"] .archive-month-block:not([data-types~="research"]) {
+  display: none;
+}
+.archives-list[data-filter="blogs"] .archive-year-block:not([data-types~="blogs"]),
+.archives-list[data-filter="projects"] .archive-year-block:not([data-types~="projects"]),
+.archives-list[data-filter="research"] .archive-year-block:not([data-types~="research"]) {
+  display: none;
+}
+</style>
+
 <!-- MathJax Configuration -->
 <script>
   MathJax = {
